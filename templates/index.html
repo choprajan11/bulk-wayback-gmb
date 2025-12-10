@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayback Checker | Website History Analyzer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Crimson+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-hover: #1a1a25;
+            --accent-gold: #d4a853;
+            --accent-gold-dim: #8b7235;
+            --accent-teal: #4ecdc4;
+            --accent-coral: #ff6b6b;
+            --text-primary: #e8e6e3;
+            --text-secondary: #9a9a9a;
+            --text-muted: #5a5a5a;
+            --border: #2a2a35;
+            --success: #4ecdc4;
+            --warning: #f7b731;
+            --danger: #ff6b6b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Pro', Georgia, serif;
+            background: var(--bg-deep);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 20% 20%, rgba(212, 168, 83, 0.08) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 80%, rgba(78, 205, 196, 0.05) 0%, transparent 50%),
+                linear-gradient(180deg, var(--bg-deep) 0%, #0d0d15 100%);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .logo {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-gold);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-gold) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+            font-style: italic;
+        }
+
+        /* Input Section */
+        .input-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .input-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .input-header h2 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .interval-select {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .interval-select label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .interval-select select {
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-family: 'Space Mono', monospace;
+            cursor: pointer;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 200px;
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            color: var(--text-primary);
+            font-family: 'Space Mono', monospace;
+            font-size: 0.95rem;
+            resize: vertical;
+            transition: border-color 0.3s;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        textarea::placeholder {
+            color: var(--text-muted);
+        }
+
+        .input-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .domain-count {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .btn {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-dim) 100%);
+            color: var(--bg-deep);
+            font-weight: 700;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(212, 168, 83, 0.3);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Progress Section */
+        .progress-section {
+            display: none;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .progress-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .progress-status {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--accent-teal);
+        }
+
+        .progress-bar-container {
+            height: 6px;
+            background: var(--bg-deep);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-gold) 0%, var(--accent-teal) 100%);
+            border-radius: 3px;
+            transition: width 0.5s ease;
+            width: 0%;
+        }
+
+        .log-container {
+            max-height: 150px;
+            overflow-y: auto;
+            background: var(--bg-deep);
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .log-entry {
+            padding: 0.25rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .log-entry:last-child {
+            border-bottom: none;
+        }
+
+        /* Results Section */
+        .results-section {
+            display: none;
+        }
+
+        .results-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .results-header h2 {
+            font-size: 2rem;
+            font-weight: 400;
+        }
+
+        .results-stats {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 1rem 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .stat-value {
+            font-family: 'Space Mono', monospace;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Result Cards */
+        .results-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .result-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .result-card:hover {
+            border-color: var(--accent-gold-dim);
+        }
+
+        .result-card.failed {
+            border-left: 3px solid var(--danger);
+        }
+
+        .result-card.success {
+            border-left: 3px solid var(--success);
+        }
+
+        .result-summary {
+            padding: 1.25rem 1.5rem;
+            cursor: pointer;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr auto;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .result-summary:hover {
+            background: var(--bg-hover);
+        }
+
+        .domain-name {
+            font-family: 'Space Mono', monospace;
+            font-size: 1rem;
+            color: var(--text-primary);
+            word-break: break-all;
+        }
+
+        .score-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .score-high {
+            background: rgba(78, 205, 196, 0.15);
+            color: var(--success);
+        }
+
+        .score-medium {
+            background: rgba(247, 183, 49, 0.15);
+            color: var(--warning);
+        }
+
+        .score-low {
+            background: rgba(255, 107, 107, 0.15);
+            color: var(--danger);
+        }
+
+        .niche-status {
+            font-size: 0.9rem;
+        }
+
+        .niche-same {
+            color: var(--success);
+        }
+
+        .niche-changed {
+            color: var(--warning);
+        }
+
+        .date-range {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .expand-icon {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            transition: transform 0.3s;
+        }
+
+        .result-card.expanded .expand-icon {
+            transform: rotate(180deg);
+        }
+
+        .result-details {
+            display: none;
+            padding: 0 1.5rem 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .result-card.expanded .result-details {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; max-height: 0; }
+            to { opacity: 1; max-height: 2000px; }
+        }
+
+        /* Story Section */
+        .story-section {
+            background: var(--bg-deep);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .story-section h4 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .story-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .story-content strong {
+            color: var(--text-primary);
+        }
+
+        .story-content em {
+            color: var(--accent-gold);
+            font-style: normal;
+        }
+
+        /* Timeline */
+        .timeline-section {
+            margin-top: 1.5rem;
+        }
+
+        .timeline-section h4 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--accent-gold) 0%, var(--accent-teal) 100%);
+        }
+
+        .timeline-item {
+            position: relative;
+            padding: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 1.35rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 2px solid var(--accent-gold);
+        }
+
+        .timeline-item.high-change::before {
+            border-color: var(--danger);
+            background: var(--danger);
+        }
+
+        .timeline-item.medium-change::before {
+            border-color: var(--warning);
+        }
+
+        .timeline-date {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .timeline-change {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .change-bar {
+            flex: 1;
+            height: 8px;
+            background: var(--bg-deep);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .change-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .change-fill.stable {
+            background: var(--success);
+        }
+
+        .change-fill.moderate {
+            background: var(--warning);
+        }
+
+        .change-fill.major {
+            background: var(--danger);
+        }
+
+        .change-percent {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            min-width: 60px;
+            text-align: right;
+        }
+
+        /* Keywords */
+        .keywords-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .keyword-box {
+            background: var(--bg-deep);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+
+        .keyword-box h5 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+        }
+
+        .keyword-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .keyword-tag {
+            background: var(--bg-card);
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Error state */
+        .error-message {
+            color: var(--danger);
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            padding: 1rem;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-deep);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .result-summary {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+            
+            .keywords-section {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .result-summary {
+                grid-template-columns: 1fr;
+            }
+            
+            .results-stats {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Internet Archive Explorer</div>
+            <h1>Wayback Checker</h1>
+            <p class="subtitle">Uncover the hidden stories of websites through time</p>
+        </header>
+
+        <section class="input-section">
+            <div class="input-header">
+                <h2>Enter Domains</h2>
+                <div class="interval-select">
+                    <label for="interval">Snapshot Interval:</label>
+                    <select id="interval">
+                        <option value="1">Every month</option>
+                        <option value="3" selected>Every 3 months</option>
+                        <option value="6">Every 6 months</option>
+                        <option value="12">Every year</option>
+                    </select>
+                </div>
+            </div>
+            <textarea id="domains" placeholder="Enter domains (one per line)&#10;&#10;example.com&#10;another-site.org&#10;website.net"></textarea>
+            <div class="input-footer">
+                <span class="domain-count" id="domainCount">0 domains</span>
+                <button class="btn btn-primary" id="analyzeBtn" onclick="startAnalysis()">
+                    Analyze History
+                </button>
+            </div>
+        </section>
+
+        <section class="progress-section" id="progressSection">
+            <div class="progress-header">
+                <h3>Analysis in Progress</h3>
+                <span class="progress-status" id="progressStatus">Initializing...</span>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="log-container" id="logContainer"></div>
+        </section>
+
+        <section class="results-section" id="resultsSection">
+            <div class="results-header">
+                <h2>Analysis Results</h2>
+                <div class="results-stats" id="resultsStats"></div>
+            </div>
+            <div class="results-grid" id="resultsGrid"></div>
+        </section>
+    </div>
+
+    <script>
+        let sessionId = null;
+        let pollInterval = null;
+        let lastResultCount = 0;
+
+        // Update domain count
+        document.getElementById('domains').addEventListener('input', function() {
+            const domains = this.value.split('\n').filter(d => d.trim());
+            document.getElementById('domainCount').textContent = `${domains.length} domain${domains.length !== 1 ? 's' : ''}`;
+        });
+
+        function pollStatus() {
+            if (!sessionId) return;
+            
+            fetch(`/api/status/${sessionId}`)
+                .then(res => res.json())
+                .then(data => {
+                    // Update progress
+                    document.getElementById('progressBar').style.width = `${data.progress}%`;
+                    document.getElementById('progressStatus').textContent = 
+                        data.status === 'complete' ? 'Complete!' : 
+                        `Analyzing: ${data.current_domain} (${data.successful + data.failed}/${data.total})`;
+                    
+                    // Update logs
+                    const container = document.getElementById('logContainer');
+                    container.innerHTML = data.logs.map(log => 
+                        `<div class="log-entry">${log}</div>`
+                    ).join('');
+                    container.scrollTop = container.scrollHeight;
+                    
+                    // Add new results
+                    if (data.results.length > lastResultCount) {
+                        for (let i = lastResultCount; i < data.results.length; i++) {
+                            addResultCard(data.results[i]);
+                        }
+                        lastResultCount = data.results.length;
+                    }
+                    
+                    // Update stats
+                    const stats = document.getElementById('resultsStats');
+                    stats.innerHTML = `
+                        <div class="stat">
+                            <div class="stat-value">${data.total}</div>
+                            <div class="stat-label">Total</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" style="color: var(--success)">${data.successful}</div>
+                            <div class="stat-label">Successful</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" style="color: var(--danger)">${data.failed}</div>
+                            <div class="stat-label">Failed</div>
+                        </div>
+                    `;
+                    
+                    // Check if complete
+                    if (data.status === 'complete') {
+                        clearInterval(pollInterval);
+                        document.getElementById('analyzeBtn').disabled = false;
+                        setTimeout(() => {
+                            document.getElementById('progressSection').classList.remove('active');
+                        }, 2000);
+                    }
+                })
+                .catch(err => console.error('Poll error:', err));
+        }
+
+        function startAnalysis() {
+            const domainsText = document.getElementById('domains').value;
+            const domains = domainsText.split('\n').map(d => d.trim()).filter(d => d);
+            const interval = parseInt(document.getElementById('interval').value);
+
+            if (domains.length === 0) {
+                alert('Please enter at least one domain');
+                return;
+            }
+
+            // Reset UI
+            lastResultCount = 0;
+            document.getElementById('analyzeBtn').disabled = true;
+            document.getElementById('progressSection').classList.add('active');
+            document.getElementById('resultsSection').classList.add('active');
+            document.getElementById('progressBar').style.width = '0%';
+            document.getElementById('logContainer').innerHTML = '';
+            document.getElementById('resultsGrid').innerHTML = '';
+            document.getElementById('resultsStats').innerHTML = '';
+
+            // Start analysis
+            fetch('/api/analyze', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ domains, interval })
+            })
+            .then(res => res.json())
+            .then(data => {
+                sessionId = data.session_id;
+                document.getElementById('progressStatus').textContent = 
+                    `Starting analysis of ${data.domains_count} domains...`;
+                
+                // Start polling
+                pollInterval = setInterval(pollStatus, 1000);
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById('analyzeBtn').disabled = false;
+            });
+        }
+
+        function addResultCard(result) {
+            const grid = document.getElementById('resultsGrid');
+            const card = document.createElement('div');
+            card.className = `result-card ${result.status}`;
+            
+            const domain = result.domain.replace('https://', '').replace('http://', '');
+            
+            if (result.status === 'failed') {
+                card.innerHTML = `
+                    <div class="result-summary" onclick="toggleCard(this)">
+                        <span class="domain-name">${domain}</span>
+                        <span class="score-badge score-low">Failed</span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                    <div class="result-details">
+                        <div class="error-message">❌ ${result.error}</div>
+                    </div>
+                `;
+            } else {
+                const scoreClass = result.consistency_score >= 70 ? 'score-high' : 
+                                   result.consistency_score >= 40 ? 'score-medium' : 'score-low';
+                
+                card.innerHTML = `
+                    <div class="result-summary" onclick="toggleCard(this)">
+                        <span class="domain-name">${domain}</span>
+                        <span class="score-badge ${scoreClass}">${result.consistency_score}%</span>
+                        <span class="niche-status ${result.niche_changed ? 'niche-changed' : 'niche-same'}">
+                            ${result.niche_changed ? '⚠️ Niche Changed' : '✓ Same Niche'}
+                        </span>
+                        <span class="date-range">${result.first_snapshot || 'N/A'}</span>
+                        <span class="date-range">${result.last_snapshot || 'N/A'}</span>
+                        <span class="expand-icon">▼</span>
+                    </div>
+                    <div class="result-details">
+                        ${renderStory(result)}
+                        ${renderTimeline(result)}
+                        ${renderKeywords(result)}
+                    </div>
+                `;
+            }
+            
+            grid.appendChild(card);
+        }
+
+        function renderStory(result) {
+            if (!result.story) return '';
+            
+            const storyHtml = result.story
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                .replace(/\n\n/g, '</p><p>');
+            
+            return `
+                <div class="story-section">
+                    <h4>The Story</h4>
+                    <div class="story-content"><p>${storyHtml}</p></div>
+                </div>
+            `;
+        }
+
+        function renderTimeline(result) {
+            if (!result.change_timeline || result.change_timeline.length === 0) return '';
+            
+            const items = result.change_timeline.map(change => {
+                const changeClass = change.change_percent > 50 ? 'high-change' : 
+                                   change.change_percent > 20 ? 'medium-change' : '';
+                const fillClass = change.change_percent > 50 ? 'major' : 
+                                  change.change_percent > 20 ? 'moderate' : 'stable';
+                const changeColor = change.change_percent > 50 ? 'var(--danger)' : 
+                                   change.change_percent > 20 ? 'var(--warning)' : 'var(--success)';
+                
+                return `
+                    <div class="timeline-item ${changeClass}">
+                        <div class="timeline-date">${change.from} → ${change.to}</div>
+                        <div class="timeline-change">
+                            <div class="change-bar">
+                                <div class="change-fill ${fillClass}" style="width: ${100 - change.change_percent}%"></div>
+                            </div>
+                            <span class="change-percent" style="color: ${changeColor}">${change.change_percent}% changed</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            
+            return `
+                <div class="timeline-section">
+                    <h4>Change Timeline</h4>
+                    <div class="timeline">${items}</div>
+                </div>
+            `;
+        }
+
+        function renderKeywords(result) {
+            if (!result.top_keywords_first && !result.top_keywords_last) return '';
+            
+            const firstKeywords = result.top_keywords_first ? 
+                result.top_keywords_first.split(', ').map(k => `<span class="keyword-tag">${k}</span>`).join('') : 
+                '<span class="keyword-tag">N/A</span>';
+            
+            const lastKeywords = result.top_keywords_last ? 
+                result.top_keywords_last.split(', ').map(k => `<span class="keyword-tag">${k}</span>`).join('') : 
+                '<span class="keyword-tag">N/A</span>';
+            
+            return `
+                <div class="keywords-section">
+                    <div class="keyword-box">
+                        <h5>Early Keywords (${result.first_snapshot})</h5>
+                        <div class="keyword-tags">${firstKeywords}</div>
+                    </div>
+                    <div class="keyword-box">
+                        <h5>Recent Keywords (${result.last_snapshot})</h5>
+                        <div class="keyword-tags">${lastKeywords}</div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function toggleCard(element) {
+            element.parentElement.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>
+

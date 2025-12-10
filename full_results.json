@@ -1,0 +1,1265 @@
+[
+  {
+    "domain": "https://acemotors.net",
+    "total_snapshots": 79,
+    "analyzed_snapshots": 38,
+    "first_snapshot": "September 2004",
+    "last_snapshot": "July 2025",
+    "consistency_score": 49.3,
+    "avg_change_percent": 50.7,
+    "max_change_percent": 99.7,
+    "stability_rating": "Significant Changes",
+    "niche_changed": true,
+    "top_keywords_first": "mwon, jul, new, nov, sonata",
+    "top_keywords_last": "ace, car, vehicles, motors, vehicle",
+    "change_timeline": [
+      {
+        "from": "September 2004",
+        "to": "February 2005",
+        "similarity": 9.8,
+        "change_percent": 90.2,
+        "title_from": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1",
+        "title_to": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1"
+      },
+      {
+        "from": "February 2005",
+        "to": "July 2005",
+        "similarity": 20.8,
+        "change_percent": 79.2,
+        "title_from": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1",
+        "title_to": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1"
+      },
+      {
+        "from": "July 2005",
+        "to": "November 2005",
+        "similarity": 27.0,
+        "change_percent": 73.0,
+        "title_from": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1",
+        "title_to": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1"
+      },
+      {
+        "from": "November 2005",
+        "to": "February 2006",
+        "similarity": 21.3,
+        "change_percent": 78.7,
+        "title_from": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1",
+        "title_to": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1"
+      },
+      {
+        "from": "February 2006",
+        "to": "June 2006",
+        "similarity": 23.4,
+        "change_percent": 76.6,
+        "title_from": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1",
+        "title_to": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1"
+      },
+      {
+        "from": "June 2006",
+        "to": "November 2006",
+        "similarity": 22.2,
+        "change_percent": 77.8,
+        "title_from": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1",
+        "title_to": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1"
+      },
+      {
+        "from": "November 2006",
+        "to": "February 2007",
+        "similarity": 13.0,
+        "change_percent": 87.0,
+        "title_from": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1",
+        "title_to": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1"
+      },
+      {
+        "from": "February 2007",
+        "to": "May 2007",
+        "similarity": 14.4,
+        "change_percent": 85.6,
+        "title_from": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1",
+        "title_to": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1"
+      },
+      {
+        "from": "May 2007",
+        "to": "October 2007",
+        "similarity": 28.0,
+        "change_percent": 72.0,
+        "title_from": "\u00a1\u00e0 ACE MOTORS \u00a1\u00e1",
+        "title_to": "used cars Korea - All about cars in Korea, car Kor"
+      },
+      {
+        "from": "October 2007",
+        "to": "February 2008",
+        "similarity": 17.9,
+        "change_percent": 82.1,
+        "title_from": "used cars Korea - All about cars in Korea, car Kor",
+        "title_to": "used cars Korea - All about cars in Korea, car Kor"
+      },
+      {
+        "from": "February 2008",
+        "to": "July 2008",
+        "similarity": 31.3,
+        "change_percent": 68.7,
+        "title_from": "used cars Korea - All about cars in Korea, car Kor",
+        "title_to": "used cars Korea - All about cars in Korea, car Kor"
+      },
+      {
+        "from": "July 2008",
+        "to": "February 2009",
+        "similarity": 31.7,
+        "change_percent": 68.3,
+        "title_from": "used cars Korea - All about cars in Korea, car Kor",
+        "title_to": "used cars Korea - All about cars in Korea, car Kor"
+      },
+      {
+        "from": "February 2009",
+        "to": "April 2010",
+        "similarity": 23.6,
+        "change_percent": 76.4,
+        "title_from": "used cars Korea - All about cars in Korea, car Kor",
+        "title_to": "Used cars Korea used cars - All about cars in Kore"
+      },
+      {
+        "from": "April 2010",
+        "to": "December 2010",
+        "similarity": 18.4,
+        "change_percent": 81.6,
+        "title_from": "Used cars Korea used cars - All about cars in Kore",
+        "title_to": "Used cars Korea used cars - All about cars in Kore"
+      },
+      {
+        "from": "December 2010",
+        "to": "June 2011",
+        "similarity": 38.7,
+        "change_percent": 61.3,
+        "title_from": "Used cars Korea used cars - All about cars in Kore",
+        "title_to": "Used cars Korea used cars - All about cars in Kore"
+      },
+      {
+        "from": "June 2011",
+        "to": "October 2011",
+        "similarity": 29.7,
+        "change_percent": 70.3,
+        "title_from": "Used cars Korea used cars - All about cars in Kore",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "October 2011",
+        "to": "January 2012",
+        "similarity": 61.3,
+        "change_percent": 38.7,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "January 2012",
+        "to": "May 2012",
+        "similarity": 51.3,
+        "change_percent": 48.7,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "May 2012",
+        "to": "August 2012",
+        "similarity": 69.8,
+        "change_percent": 30.2,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "August 2012",
+        "to": "November 2012",
+        "similarity": 63.1,
+        "change_percent": 36.9,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "November 2012",
+        "to": "March 2013",
+        "similarity": 63.0,
+        "change_percent": 37.0,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "March 2013",
+        "to": "July 2013",
+        "similarity": 59.9,
+        "change_percent": 40.1,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "July 2013",
+        "to": "October 2013",
+        "similarity": 93.5,
+        "change_percent": 6.5,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "October 2013",
+        "to": "January 2014",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "January 2014",
+        "to": "December 2014",
+        "similarity": 54.0,
+        "change_percent": 46.0,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "December 2014",
+        "to": "March 2015",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "March 2015",
+        "to": "August 2015",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "August 2015",
+        "to": "March 2016",
+        "similarity": 40.2,
+        "change_percent": 59.8,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "March 2016",
+        "to": "July 2016",
+        "similarity": 94.1,
+        "change_percent": 5.9,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "July 2016",
+        "to": "December 2016",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "December 2016",
+        "to": "April 2017",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "April 2017",
+        "to": "July 2017",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "All about cars in Korea - Used cars Korea used car"
+      },
+      {
+        "from": "July 2017",
+        "to": "August 2020",
+        "similarity": 1.9,
+        "change_percent": 98.1,
+        "title_from": "All about cars in Korea - Used cars Korea used car",
+        "title_to": "\u5e78\u8fd028pc\u86cb\u86cb_\u5b98\u7f51\u9996\u9875"
+      },
+      {
+        "from": "August 2020",
+        "to": "December 2020",
+        "similarity": 0.6,
+        "change_percent": 99.4,
+        "title_from": "\u5e78\u8fd028pc\u86cb\u86cb_\u5b98\u7f51\u9996\u9875",
+        "title_to": "\u6d4f\u89c8\u5668\u6b63\u5728\u5b89\u5168\u68c0\u6d4b..."
+      },
+      {
+        "from": "December 2020",
+        "to": "May 2021",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "\u6d4f\u89c8\u5668\u6b63\u5728\u5b89\u5168\u68c0\u6d4b...",
+        "title_to": "\u6d4f\u89c8\u5668\u6b63\u5728\u5b89\u5168\u68c0\u6d4b..."
+      },
+      {
+        "from": "May 2021",
+        "to": "December 2024",
+        "similarity": 0.3,
+        "change_percent": 99.7,
+        "title_from": "\u6d4f\u89c8\u5668\u6b63\u5728\u5b89\u5168\u68c0\u6d4b...",
+        "title_to": "Reliable Used Cars in the US - ACE AUTO Dealership"
+      },
+      {
+        "from": "December 2024",
+        "to": "July 2025",
+        "similarity": 99.8,
+        "change_percent": 0.2,
+        "title_from": "Reliable Used Cars in the US - ACE AUTO Dealership",
+        "title_to": "Reliable Used Cars in the US - ACE AUTO Dealership"
+      }
+    ]
+  },
+  {
+    "domain": "https://aldine.us",
+    "total_snapshots": 12,
+    "analyzed_snapshots": 8,
+    "first_snapshot": "October 2016",
+    "last_snapshot": "July 2025",
+    "consistency_score": 0.3,
+    "avg_change_percent": 99.7,
+    "max_change_percent": 100.0,
+    "stability_rating": "Major Overhauls",
+    "niche_changed": true,
+    "top_keywords_first": "",
+    "top_keywords_last": "emergency, aldine, hour, unit, repair",
+    "change_timeline": [
+      {
+        "from": "October 2016",
+        "to": "May 2017",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "May 2017",
+        "to": "September 2017",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "September 2017",
+        "to": "June 2018",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "June 2018",
+        "to": "November 2021",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "November 2021",
+        "to": "November 2023",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "November 2023",
+        "to": "May 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "One moment, please..."
+      },
+      {
+        "from": "May 2024",
+        "to": "July 2025",
+        "similarity": 1.8,
+        "change_percent": 98.2,
+        "title_from": "One moment, please...",
+        "title_to": "24 Hour AC Repair Aldine Houston 77032 | 247 Emerg"
+      }
+    ]
+  },
+  {
+    "domain": "https://astro-ai.xyz",
+    "total_snapshots": 3,
+    "analyzed_snapshots": 2,
+    "first_snapshot": "November 2024",
+    "last_snapshot": "February 2025",
+    "consistency_score": 100.0,
+    "avg_change_percent": 0.0,
+    "max_change_percent": 0.0,
+    "stability_rating": "Very Stable",
+    "niche_changed": false,
+    "top_keywords_first": "astro, destiny, astroai, twitter, buy",
+    "top_keywords_last": "astro, destiny, astroai, twitter, buy",
+    "change_timeline": [
+      {
+        "from": "November 2024",
+        "to": "February 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "$ASTRO | AstroAI",
+        "title_to": "$ASTRO | AstroAI"
+      }
+    ]
+  },
+  {
+    "domain": "https://biozen.info",
+    "total_snapshots": 1,
+    "analyzed_snapshots": 1,
+    "first_snapshot": "December 2024",
+    "last_snapshot": "December 2024",
+    "consistency_score": 100.0,
+    "avg_change_percent": 0.0,
+    "max_change_percent": 0.0,
+    "stability_rating": "Very Stable",
+    "niche_changed": false,
+    "top_keywords_first": "precio, oferta, cop, products, combo",
+    "top_keywords_last": "precio, oferta, cop, products, combo",
+    "change_timeline": []
+  },
+  {
+    "domain": "https://booti.website",
+    "total_snapshots": 5,
+    "analyzed_snapshots": 3,
+    "first_snapshot": "November 2021",
+    "last_snapshot": "March 2025",
+    "consistency_score": 50.2,
+    "avg_change_percent": 49.8,
+    "max_change_percent": 99.5,
+    "stability_rating": "Significant Changes",
+    "niche_changed": true,
+    "top_keywords_first": "error, cannot, displayed, please, service",
+    "top_keywords_last": "booti, con, que, para, tus",
+    "change_timeline": [
+      {
+        "from": "November 2021",
+        "to": "November 2024",
+        "similarity": 0.5,
+        "change_percent": 99.5,
+        "title_from": "N/A",
+        "title_to": "Booti - Tu asistente virtual"
+      },
+      {
+        "from": "November 2024",
+        "to": "March 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Booti - Tu asistente virtual",
+        "title_to": "Booti - Tu asistente virtual"
+      }
+    ]
+  },
+  {
+    "domain": "https://ecoresin.co",
+    "total_snapshots": 2,
+    "analyzed_snapshots": 2,
+    "first_snapshot": "December 2024",
+    "last_snapshot": "February 2025",
+    "consistency_score": 100.0,
+    "avg_change_percent": 0.0,
+    "max_change_percent": 0.0,
+    "stability_rating": "Very Stable",
+    "niche_changed": false,
+    "top_keywords_first": "resin, eco, ltd, sustainable, solutions",
+    "top_keywords_last": "resin, eco, ltd, sustainable, solutions",
+    "change_timeline": [
+      {
+        "from": "December 2024",
+        "to": "February 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Eco Resin Ltd",
+        "title_to": "Eco Resin Ltd"
+      }
+    ]
+  },
+  {
+    "domain": "https://fitquest.info",
+    "total_snapshots": 2,
+    "analyzed_snapshots": 2,
+    "first_snapshot": "September 2024",
+    "last_snapshot": "April 2025",
+    "consistency_score": 100.0,
+    "avg_change_percent": 0.0,
+    "max_change_percent": 0.0,
+    "stability_rating": "Very Stable",
+    "niche_changed": false,
+    "top_keywords_first": "fitness, workout, fitquest, motivation, level",
+    "top_keywords_last": "fitness, workout, fitquest, motivation, level",
+    "change_timeline": [
+      {
+        "from": "September 2024",
+        "to": "April 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Find the Best Gym Workout App for Your Fitness Goa",
+        "title_to": "Find the Best Gym Workout App for Your Fitness Goa"
+      }
+    ]
+  },
+  {
+    "domain": "https://fun2play.info",
+    "total_snapshots": 4,
+    "analyzed_snapshots": 2,
+    "first_snapshot": "December 2024",
+    "last_snapshot": "April 2025",
+    "consistency_score": 81.0,
+    "avg_change_percent": 19.0,
+    "max_change_percent": 19.0,
+    "stability_rating": "Very Stable",
+    "niche_changed": false,
+    "top_keywords_first": "play, fun, laugh, enjoy, website",
+    "top_keywords_last": "play, fun, laugh, enjoy, website",
+    "change_timeline": [
+      {
+        "from": "December 2024",
+        "to": "April 2025",
+        "similarity": 81.0,
+        "change_percent": 19.0,
+        "title_from": "Fun 2 Play",
+        "title_to": "Fun 2 Play"
+      }
+    ]
+  },
+  {
+    "domain": "https://globalstar.io",
+    "total_snapshots": 33,
+    "analyzed_snapshots": 15,
+    "first_snapshot": "August 2020",
+    "last_snapshot": "August 2025",
+    "consistency_score": 94.2,
+    "avg_change_percent": 5.8,
+    "max_change_percent": 69.2,
+    "stability_rating": "Very Stable",
+    "niche_changed": false,
+    "top_keywords_first": "solutions, globalstar, liquidity, trading, read",
+    "top_keywords_last": "globalstar, liquidity, solutions, blockchain, digital",
+    "change_timeline": [
+      {
+        "from": "August 2020",
+        "to": "November 2020",
+        "similarity": 30.8,
+        "change_percent": 69.2,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "Home - GlobalStar"
+      },
+      {
+        "from": "November 2020",
+        "to": "April 2021",
+        "similarity": 98.7,
+        "change_percent": 1.3,
+        "title_from": "Home - GlobalStar",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "April 2021",
+        "to": "August 2021",
+        "similarity": 96.5,
+        "change_percent": 3.5,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "August 2021",
+        "to": "November 2021",
+        "similarity": 93.2,
+        "change_percent": 6.8,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "November 2021",
+        "to": "May 2022",
+        "similarity": 99.7,
+        "change_percent": 0.3,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "May 2022",
+        "to": "December 2022",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "December 2022",
+        "to": "March 2023",
+        "similarity": 99.8,
+        "change_percent": 0.2,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "March 2023",
+        "to": "September 2023",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "September 2023",
+        "to": "March 2024",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "March 2024",
+        "to": "June 2024",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "June 2024",
+        "to": "October 2024",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "October 2024",
+        "to": "January 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "January 2025",
+        "to": "April 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      },
+      {
+        "from": "April 2025",
+        "to": "August 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "GlobalStar \u2013 Delivering optimal liquidity solution",
+        "title_to": "GlobalStar \u2013 Delivering optimal liquidity solution"
+      }
+    ]
+  },
+  {
+    "domain": "https://hospitalsanjose.org",
+    "total_snapshots": 16,
+    "analyzed_snapshots": 8,
+    "first_snapshot": "July 2008",
+    "last_snapshot": "December 2024",
+    "consistency_score": 60.6,
+    "avg_change_percent": 39.4,
+    "max_change_percent": 98.9,
+    "stability_rating": "Moderately Stable",
+    "niche_changed": true,
+    "top_keywords_first": "del, san, guaviare, hospital, convocatoria",
+    "top_keywords_last": "esteem, care, spirit, temper, say",
+    "change_timeline": [
+      {
+        "from": "July 2008",
+        "to": "November 2008",
+        "similarity": 47.9,
+        "change_percent": 52.1,
+        "title_from": "Bienvenido a Hospital San Jose del Guaviare / www.",
+        "title_to": "Bienvenido a Hospital San Jose del Guaviare / www."
+      },
+      {
+        "from": "November 2008",
+        "to": "March 2009",
+        "similarity": 52.7,
+        "change_percent": 47.3,
+        "title_from": "Bienvenido a Hospital San Jose del Guaviare / www.",
+        "title_to": "Bienvenido a Hospital San Jose del Guaviare / www."
+      },
+      {
+        "from": "March 2009",
+        "to": "June 2009",
+        "similarity": 47.4,
+        "change_percent": 52.6,
+        "title_from": "Bienvenido a Hospital San Jose del Guaviare / www.",
+        "title_to": "Bienvenido a Hospital San Jose del Guaviare / www."
+      },
+      {
+        "from": "June 2009",
+        "to": "September 2009",
+        "similarity": 79.5,
+        "change_percent": 20.5,
+        "title_from": "Bienvenido a Hospital San Jose del Guaviare / www.",
+        "title_to": "Bienvenido a Hospital San Jose del Guaviare / www."
+      },
+      {
+        "from": "September 2009",
+        "to": "December 2009",
+        "similarity": 99.2,
+        "change_percent": 0.8,
+        "title_from": "Bienvenido a Hospital San Jose del Guaviare / www.",
+        "title_to": "Bienvenido a Hospital San Jose del Guaviare / www."
+      },
+      {
+        "from": "December 2009",
+        "to": "April 2010",
+        "similarity": 96.3,
+        "change_percent": 3.7,
+        "title_from": "Bienvenido a Hospital San Jose del Guaviare / www.",
+        "title_to": "Bienvenido a Hospital San Jose del Guaviare / www."
+      },
+      {
+        "from": "April 2010",
+        "to": "December 2024",
+        "similarity": 1.1,
+        "change_percent": 98.9,
+        "title_from": "Bienvenido a Hospital San Jose del Guaviare / www.",
+        "title_to": "Hospital San Jose"
+      }
+    ]
+  },
+  {
+    "domain": "https://ingarden.co",
+    "total_snapshots": 6,
+    "analyzed_snapshots": 3,
+    "first_snapshot": "March 2021",
+    "last_snapshot": "May 2022",
+    "consistency_score": 7.6,
+    "avg_change_percent": 92.4,
+    "max_change_percent": 98.7,
+    "stability_rating": "Major Overhauls",
+    "niche_changed": true,
+    "top_keywords_first": "ingarden, microgreens, buy, fresh, pads",
+    "top_keywords_last": "ingarden, microgreens, started, health, kit",
+    "change_timeline": [
+      {
+        "from": "March 2021",
+        "to": "June 2021",
+        "similarity": 13.9,
+        "change_percent": 86.1,
+        "title_from": "Indoor Herb & Vegetable Microgreens Garden | ingar",
+        "title_to": "Microgreen Growing Kit - Smart Indoor Garden | ing"
+      },
+      {
+        "from": "June 2021",
+        "to": "May 2022",
+        "similarity": 1.3,
+        "change_percent": 98.7,
+        "title_from": "Microgreen Growing Kit - Smart Indoor Garden | ing",
+        "title_to": "Superfood Growing Kit - Microgreen Indoor Garden |"
+      }
+    ]
+  },
+  {
+    "domain": "https://jfernandez.online",
+    "total_snapshots": 18,
+    "analyzed_snapshots": 12,
+    "first_snapshot": "October 2020",
+    "last_snapshot": "April 2025",
+    "consistency_score": 92.0,
+    "avg_change_percent": 8.0,
+    "max_change_percent": 30.6,
+    "stability_rating": "Very Stable",
+    "niche_changed": false,
+    "top_keywords_first": "jennifer, fernandez, phd, writing, skip",
+    "top_keywords_last": "jennifer, fernandez, phd, content, website",
+    "change_timeline": [
+      {
+        "from": "October 2020",
+        "to": "March 2021",
+        "similarity": 72.5,
+        "change_percent": 27.5,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "March 2021",
+        "to": "July 2021",
+        "similarity": 81.9,
+        "change_percent": 18.1,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "July 2021",
+        "to": "October 2021",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "October 2021",
+        "to": "May 2022",
+        "similarity": 69.4,
+        "change_percent": 30.6,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "May 2022",
+        "to": "August 2022",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "August 2022",
+        "to": "November 2022",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "November 2022",
+        "to": "March 2023",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "March 2023",
+        "to": "May 2024",
+        "similarity": 91.4,
+        "change_percent": 8.6,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "May 2024",
+        "to": "October 2024",
+        "similarity": 99.3,
+        "change_percent": 0.7,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "October 2024",
+        "to": "February 2025",
+        "similarity": 98.4,
+        "change_percent": 1.6,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      },
+      {
+        "from": "February 2025",
+        "to": "April 2025",
+        "similarity": 99.3,
+        "change_percent": 0.7,
+        "title_from": "jennifer fernandez, phd",
+        "title_to": "jennifer fernandez, phd"
+      }
+    ]
+  },
+  {
+    "domain": "https://lookfor.shop",
+    "total_snapshots": 11,
+    "analyzed_snapshots": 6,
+    "first_snapshot": "July 2022",
+    "last_snapshot": "August 2025",
+    "consistency_score": 70.6,
+    "avg_change_percent": 29.4,
+    "max_change_percent": 97.7,
+    "stability_rating": "Moderately Stable",
+    "niche_changed": true,
+    "top_keywords_first": "reviews, best, shop, shipping, free",
+    "top_keywords_last": "kumbre, para, lookfor, wishlist, hombre",
+    "change_timeline": [
+      {
+        "from": "July 2022",
+        "to": "December 2023",
+        "similarity": 2.3,
+        "change_percent": 97.7,
+        "title_from": "Online Store With Free Shipping | Look For",
+        "title_to": "LookFor \u2022 LookFor"
+      },
+      {
+        "from": "December 2023",
+        "to": "May 2024",
+        "similarity": 50.7,
+        "change_percent": 49.3,
+        "title_from": "LookFor \u2022 LookFor",
+        "title_to": "LookFor \u2022 LookFor"
+      },
+      {
+        "from": "May 2024",
+        "to": "November 2024",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "LookFor \u2022 LookFor",
+        "title_to": "LookFor \u2022 LookFor"
+      },
+      {
+        "from": "November 2024",
+        "to": "February 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "LookFor \u2022 LookFor",
+        "title_to": "LookFor \u2022 LookFor"
+      },
+      {
+        "from": "February 2025",
+        "to": "August 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "LookFor \u2022 LookFor",
+        "title_to": "LookFor \u2022 LookFor"
+      }
+    ]
+  },
+  {
+    "domain": "https://maniacflyfishing.com",
+    "total_snapshots": 5,
+    "analyzed_snapshots": 5,
+    "first_snapshot": "March 2022",
+    "last_snapshot": "December 2024",
+    "consistency_score": 93.5,
+    "avg_change_percent": 6.5,
+    "max_change_percent": 23.0,
+    "stability_rating": "Very Stable",
+    "niche_changed": false,
+    "top_keywords_first": "con, pesca, mosca, inicio, maniac",
+    "top_keywords_last": "pesca, con, inicio, maniac, mosca",
+    "change_timeline": [
+      {
+        "from": "March 2022",
+        "to": "February 2023",
+        "similarity": 77.0,
+        "change_percent": 23.0,
+        "title_from": "Inicio | Maniac Fly Fishing",
+        "title_to": "Inicio | Maniac Fly Fishing"
+      },
+      {
+        "from": "February 2023",
+        "to": "April 2024",
+        "similarity": 98.7,
+        "change_percent": 1.3,
+        "title_from": "Inicio | Maniac Fly Fishing",
+        "title_to": "Inicio | Maniac Fly Fishing"
+      },
+      {
+        "from": "April 2024",
+        "to": "August 2024",
+        "similarity": 99.1,
+        "change_percent": 0.9,
+        "title_from": "Inicio | Maniac Fly Fishing",
+        "title_to": "Inicio | Maniac Fly Fishing"
+      },
+      {
+        "from": "August 2024",
+        "to": "December 2024",
+        "similarity": 99.1,
+        "change_percent": 0.9,
+        "title_from": "Inicio | Maniac Fly Fishing",
+        "title_to": "Inicio | Maniac Fly Fishing"
+      }
+    ]
+  },
+  {
+    "domain": "https://maratones.fun",
+    "total_snapshots": 10,
+    "analyzed_snapshots": 6,
+    "first_snapshot": "January 2023",
+    "last_snapshot": "March 2025",
+    "consistency_score": 18.6,
+    "avg_change_percent": 81.4,
+    "max_change_percent": 90.5,
+    "stability_rating": "Major Overhauls",
+    "niche_changed": false,
+    "top_keywords_first": "maratones, febrero, correr, info, mas",
+    "top_keywords_last": "maratones, info, mar, los, marathon",
+    "change_timeline": [
+      {
+        "from": "January 2023",
+        "to": "May 2023",
+        "similarity": 21.6,
+        "change_percent": 78.4,
+        "title_from": "Maratones - Calendario",
+        "title_to": "Maratones - Calendario"
+      },
+      {
+        "from": "May 2023",
+        "to": "May 2024",
+        "similarity": 10.5,
+        "change_percent": 89.5,
+        "title_from": "Maratones - Calendario",
+        "title_to": "Maratones - Calendario"
+      },
+      {
+        "from": "May 2024",
+        "to": "September 2024",
+        "similarity": 9.5,
+        "change_percent": 90.5,
+        "title_from": "Maratones - Calendario",
+        "title_to": "Maratones - Calendario"
+      },
+      {
+        "from": "September 2024",
+        "to": "December 2024",
+        "similarity": 19.9,
+        "change_percent": 80.1,
+        "title_from": "Maratones - Calendario",
+        "title_to": "Maratones - Calendario"
+      },
+      {
+        "from": "December 2024",
+        "to": "March 2025",
+        "similarity": 31.3,
+        "change_percent": 68.7,
+        "title_from": "Maratones - Calendario",
+        "title_to": "Maratones - Calendario"
+      }
+    ]
+  },
+  {
+    "domain": "https://outletreforged.com",
+    "total_snapshots": 6,
+    "analyzed_snapshots": 3,
+    "first_snapshot": "December 2024",
+    "last_snapshot": "August 2025",
+    "consistency_score": 92.8,
+    "avg_change_percent": 7.2,
+    "max_change_percent": 13.1,
+    "stability_rating": "Very Stable",
+    "niche_changed": false,
+    "top_keywords_first": "cajas, tiktok, precio, oferta, total",
+    "top_keywords_last": "cajas, precio, tiktok, oferta, total",
+    "change_timeline": [
+      {
+        "from": "December 2024",
+        "to": "May 2025",
+        "similarity": 86.9,
+        "change_percent": 13.1,
+        "title_from": "Outlet Reforged - Las Mejores Liquidaciones",
+        "title_to": "Outlet Reforged - Las Mejores Liquidaciones"
+      },
+      {
+        "from": "May 2025",
+        "to": "August 2025",
+        "similarity": 98.7,
+        "change_percent": 1.3,
+        "title_from": "Outlet Reforged - Las Mejores Liquidaciones",
+        "title_to": "Outlet Reforged - Las Mejores Liquidaciones"
+      }
+    ]
+  },
+  {
+    "domain": "https://phonehouse.site",
+    "total_snapshots": 3,
+    "analyzed_snapshots": 2,
+    "first_snapshot": "November 2024",
+    "last_snapshot": "February 2025",
+    "consistency_score": 0.0,
+    "avg_change_percent": 100.0,
+    "max_change_percent": 100.0,
+    "stability_rating": "Major Overhauls",
+    "niche_changed": true,
+    "top_keywords_first": "",
+    "top_keywords_last": "mobile, electronics, products, shop, phone",
+    "change_timeline": [
+      {
+        "from": "November 2024",
+        "to": "February 2025",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "Top Mobile and Electronics Products at Phone House"
+      }
+    ]
+  },
+  {
+    "domain": "https://smarticket.info",
+    "total_snapshots": 4,
+    "analyzed_snapshots": 3,
+    "first_snapshot": "August 2018",
+    "last_snapshot": "July 2025",
+    "consistency_score": 6.1,
+    "avg_change_percent": 94.0,
+    "max_change_percent": 98.4,
+    "stability_rating": "Major Overhauls",
+    "niche_changed": true,
+    "top_keywords_first": "smarticket, info",
+    "top_keywords_last": "smarticket, lanzamiento, los, sitio, cookies",
+    "change_timeline": [
+      {
+        "from": "August 2018",
+        "to": "December 2021",
+        "similarity": 10.5,
+        "change_percent": 89.5,
+        "title_from": "SMARTICKET.INFO",
+        "title_to": "N/A"
+      },
+      {
+        "from": "December 2021",
+        "to": "July 2025",
+        "similarity": 1.6,
+        "change_percent": 98.4,
+        "title_from": "N/A",
+        "title_to": "smarticket.info"
+      }
+    ]
+  },
+  {
+    "domain": "https://thebestgift.org",
+    "total_snapshots": 15,
+    "analyzed_snapshots": 8,
+    "first_snapshot": "July 2013",
+    "last_snapshot": "August 2025",
+    "consistency_score": 35.4,
+    "avg_change_percent": 64.6,
+    "max_change_percent": 100.0,
+    "stability_rating": "Major Overhauls",
+    "niche_changed": true,
+    "top_keywords_first": "audio, music, community, library, welcome",
+    "top_keywords_last": "gifts, christmas, gift, birthday, best",
+    "change_timeline": [
+      {
+        "from": "July 2013",
+        "to": "January 2016",
+        "similarity": 1.0,
+        "change_percent": 99.0,
+        "title_from": "Welcome to the US Petabox",
+        "title_to": "thebestgift.org\u00a0-\u00a0This website is for sale!\u00a0-\u00a0theb"
+      },
+      {
+        "from": "January 2016",
+        "to": "October 2016",
+        "similarity": 62.0,
+        "change_percent": 38.0,
+        "title_from": "thebestgift.org\u00a0-\u00a0This website is for sale!\u00a0-\u00a0theb",
+        "title_to": "thebestgift.org\u00a0-\u00a0This website is for sale!\u00a0-\u00a0theb"
+      },
+      {
+        "from": "October 2016",
+        "to": "May 2017",
+        "similarity": 47.2,
+        "change_percent": 52.8,
+        "title_from": "thebestgift.org\u00a0-\u00a0This website is for sale!\u00a0-\u00a0theb",
+        "title_to": "thebestgift.org\u00a0-\u00a0This website is for sale!\u00a0-\u00a0theb"
+      },
+      {
+        "from": "May 2017",
+        "to": "December 2021",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "thebestgift.org\u00a0-\u00a0This website is for sale!\u00a0-\u00a0theb",
+        "title_to": "N/A"
+      },
+      {
+        "from": "December 2021",
+        "to": "December 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "TheBestGift: Find Perfect Gifts for Every Occasion"
+      },
+      {
+        "from": "December 2024",
+        "to": "April 2025",
+        "similarity": 37.8,
+        "change_percent": 62.2,
+        "title_from": "TheBestGift: Find Perfect Gifts for Every Occasion",
+        "title_to": "TheBestGift: Find Perfect Gifts for Every Occasion"
+      },
+      {
+        "from": "April 2025",
+        "to": "August 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "TheBestGift: Find Perfect Gifts for Every Occasion",
+        "title_to": "TheBestGift: Find Perfect Gifts for Every Occasion"
+      }
+    ]
+  },
+  {
+    "domain": "https://thehostclub.xyz",
+    "total_snapshots": 2,
+    "analyzed_snapshots": 2,
+    "first_snapshot": "December 2024",
+    "last_snapshot": "February 2025",
+    "consistency_score": 72.1,
+    "avg_change_percent": 27.9,
+    "max_change_percent": 27.9,
+    "stability_rating": "Moderately Stable",
+    "niche_changed": false,
+    "top_keywords_first": "club, host, join, community, connections",
+    "top_keywords_last": "club, host, join, community, connections",
+    "change_timeline": [
+      {
+        "from": "December 2024",
+        "to": "February 2025",
+        "similarity": 72.1,
+        "change_percent": 27.9,
+        "title_from": "The Host Club: Connect, Engage, and Discover Toget",
+        "title_to": "The Host Club: Connect, Engage, and Discover Toget"
+      }
+    ]
+  },
+  {
+    "domain": "https://thehotspotyoga.com",
+    "total_snapshots": 7,
+    "analyzed_snapshots": 6,
+    "first_snapshot": "December 2014",
+    "last_snapshot": "May 2025",
+    "consistency_score": 59.6,
+    "avg_change_percent": 40.4,
+    "max_change_percent": 100.0,
+    "stability_rating": "Significant Changes",
+    "niche_changed": true,
+    "top_keywords_first": "",
+    "top_keywords_last": "yoga, del, que, bikram, una",
+    "change_timeline": [
+      {
+        "from": "December 2014",
+        "to": "December 2021",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "December 2021",
+        "to": "April 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "Inicio - thehotspotyoga.com"
+      },
+      {
+        "from": "April 2024",
+        "to": "August 2024",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Inicio - thehotspotyoga.com",
+        "title_to": "Inicio - thehotspotyoga.com"
+      },
+      {
+        "from": "August 2024",
+        "to": "December 2024",
+        "similarity": 99.0,
+        "change_percent": 1.0,
+        "title_from": "Inicio - thehotspotyoga.com",
+        "title_to": "Inicio - thehotspotyoga.com"
+      },
+      {
+        "from": "December 2024",
+        "to": "May 2025",
+        "similarity": 99.0,
+        "change_percent": 1.0,
+        "title_from": "Inicio - thehotspotyoga.com",
+        "title_to": "Inicio - thehotspotyoga.com"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1422 @@
+[
+  {
+    "domain": "https://360Smiles.net",
+    "total_snapshots": 21,
+    "analyzed_snapshots": 10,
+    "first_snapshot": "February 2018",
+    "last_snapshot": "February 2025",
+    "consistency_score": 81.0,
+    "niche_changed": true,
+    "change_timeline": [
+      {
+        "from": "February 2018",
+        "to": "October 2018",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm",
+        "title_to": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm"
+      },
+      {
+        "from": "October 2018",
+        "to": "January 2019",
+        "similarity": 98.8,
+        "change_percent": 1.2,
+        "title_from": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm",
+        "title_to": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm"
+      },
+      {
+        "from": "January 2019",
+        "to": "May 2019",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm",
+        "title_to": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm"
+      },
+      {
+        "from": "May 2019",
+        "to": "August 2019",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm",
+        "title_to": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm"
+      },
+      {
+        "from": "August 2019",
+        "to": "January 2020",
+        "similarity": 99.9,
+        "change_percent": 0.1,
+        "title_from": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm",
+        "title_to": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm"
+      },
+      {
+        "from": "January 2020",
+        "to": "August 2020",
+        "similarity": 84.1,
+        "change_percent": 15.9,
+        "title_from": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm",
+        "title_to": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm"
+      },
+      {
+        "from": "August 2020",
+        "to": "April 2021",
+        "similarity": 99.9,
+        "change_percent": 0.1,
+        "title_from": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm",
+        "title_to": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm"
+      },
+      {
+        "from": "April 2021",
+        "to": "October 2021",
+        "similarity": 46.7,
+        "change_percent": 53.3,
+        "title_from": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm",
+        "title_to": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm"
+      },
+      {
+        "from": "October 2021",
+        "to": "February 2025",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "Grand Prairie, TX Dentist | Dentist 75050 | 360 Sm",
+        "title_to": "N/A"
+      }
+    ]
+  },
+  {
+    "domain": "https://ChinohillsUrgentCarePetClinic.com",
+    "total_snapshots": 3,
+    "analyzed_snapshots": 3,
+    "first_snapshot": "December 2021",
+    "last_snapshot": "August 2022",
+    "consistency_score": 55.1,
+    "niche_changed": false,
+    "change_timeline": [
+      {
+        "from": "December 2021",
+        "to": "May 2022",
+        "similarity": 99.8,
+        "change_percent": 0.2,
+        "title_from": "Chino Hills, CA Veterinary Hospital and Emergency ",
+        "title_to": "Chino Hills, CA Veterinary Hospital and Emergency "
+      },
+      {
+        "from": "May 2022",
+        "to": "August 2022",
+        "similarity": 10.3,
+        "change_percent": 89.7,
+        "title_from": "Chino Hills, CA Veterinary Hospital and Emergency ",
+        "title_to": "The Best Emergency Vet in Chino Hills | Visit Our "
+      }
+    ]
+  },
+  {
+    "domain": "https://EliteEyecareChicago.com",
+    "total_snapshots": 4,
+    "analyzed_snapshots": 4,
+    "first_snapshot": "February 2021",
+    "last_snapshot": "January 2025",
+    "consistency_score": 70.1,
+    "niche_changed": true,
+    "change_timeline": [
+      {
+        "from": "February 2021",
+        "to": "January 2022",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Elite Eye Care Chicago, Illinois",
+        "title_to": "Elite Eye Care Chicago, Illinois"
+      },
+      {
+        "from": "January 2022",
+        "to": "September 2023",
+        "similarity": 99.5,
+        "change_percent": 0.5,
+        "title_from": "Elite Eye Care Chicago, Illinois",
+        "title_to": "Elite Eye Care Chicago, Illinois"
+      },
+      {
+        "from": "September 2023",
+        "to": "January 2025",
+        "similarity": 10.6,
+        "change_percent": 89.4,
+        "title_from": "Elite Eye Care Chicago, Illinois",
+        "title_to": "Elite Eye Care Chicago, Illinois"
+      }
+    ]
+  },
+  {
+    "domain": "https://goldenlanternah.com",
+    "total_snapshots": 29,
+    "analyzed_snapshots": 18,
+    "first_snapshot": "April 2013",
+    "last_snapshot": "November 2022",
+    "consistency_score": 72.1,
+    "niche_changed": true,
+    "change_timeline": [
+      {
+        "from": "April 2013",
+        "to": "May 2014",
+        "similarity": 3.1,
+        "change_percent": 96.9,
+        "title_from": "Golden Lantern Animal Hospital - Home",
+        "title_to": "Golden Lantern Animal Hospital | Veterinarian"
+      },
+      {
+        "from": "May 2014",
+        "to": "December 2014",
+        "similarity": 6.3,
+        "change_percent": 93.7,
+        "title_from": "Golden Lantern Animal Hospital | Veterinarian",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "December 2014",
+        "to": "April 2015",
+        "similarity": 94.3,
+        "change_percent": 5.7,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "April 2015",
+        "to": "August 2015",
+        "similarity": 93.9,
+        "change_percent": 6.1,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "August 2015",
+        "to": "January 2016",
+        "similarity": 93.2,
+        "change_percent": 6.8,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "January 2016",
+        "to": "April 2016",
+        "similarity": 95.5,
+        "change_percent": 4.5,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "April 2016",
+        "to": "October 2016",
+        "similarity": 94.2,
+        "change_percent": 5.8,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "October 2016",
+        "to": "May 2017",
+        "similarity": 95.7,
+        "change_percent": 4.3,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "May 2017",
+        "to": "September 2017",
+        "similarity": 96.0,
+        "change_percent": 4.0,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "September 2017",
+        "to": "March 2018",
+        "similarity": 93.8,
+        "change_percent": 6.2,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "March 2018",
+        "to": "August 2018",
+        "similarity": 91.9,
+        "change_percent": 8.1,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "August 2018",
+        "to": "January 2019",
+        "similarity": 79.6,
+        "change_percent": 20.4,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Golden Lantern Animal Hospital Dana Point"
+      },
+      {
+        "from": "January 2019",
+        "to": "October 2020",
+        "similarity": 5.8,
+        "change_percent": 94.2,
+        "title_from": "Golden Lantern Animal Hospital Dana Point",
+        "title_to": "Veterinarian in Dana Point | Vet Near You | Golden"
+      },
+      {
+        "from": "October 2020",
+        "to": "January 2021",
+        "similarity": 96.7,
+        "change_percent": 3.3,
+        "title_from": "Veterinarian in Dana Point | Vet Near You | Golden",
+        "title_to": "Veterinarian in Dana Point | Vet Near You | Golden"
+      },
+      {
+        "from": "January 2021",
+        "to": "May 2021",
+        "similarity": 83.0,
+        "change_percent": 17.0,
+        "title_from": "Veterinarian in Dana Point | Vet Near You | Golden",
+        "title_to": "Veterinarian in Dana Point | Vet Near You | Golden"
+      },
+      {
+        "from": "May 2021",
+        "to": "September 2021",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Veterinarian in Dana Point | Vet Near You | Golden",
+        "title_to": "Veterinarian in Dana Point | Vet Near You | Golden"
+      },
+      {
+        "from": "September 2021",
+        "to": "November 2022",
+        "similarity": 2.4,
+        "change_percent": 97.6,
+        "title_from": "Veterinarian in Dana Point | Vet Near You | Golden",
+        "title_to": "One moment, please..."
+      }
+    ]
+  },
+  {
+    "domain": "https://Keyes2Life.org",
+    "total_snapshots": 43,
+    "analyzed_snapshots": 20,
+    "first_snapshot": "July 2016",
+    "last_snapshot": "June 2024",
+    "consistency_score": 89.6,
+    "niche_changed": true,
+    "change_timeline": [
+      {
+        "from": "July 2016",
+        "to": "October 2016",
+        "similarity": 3.2,
+        "change_percent": 96.8,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "October 2016",
+        "to": "July 2017",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "July 2017",
+        "to": "January 2018",
+        "similarity": 99.8,
+        "change_percent": 0.2,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "January 2018",
+        "to": "June 2018",
+        "similarity": 99.7,
+        "change_percent": 0.3,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "June 2018",
+        "to": "January 2019",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "January 2019",
+        "to": "July 2019",
+        "similarity": 99.7,
+        "change_percent": 0.3,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "July 2019",
+        "to": "October 2019",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "October 2019",
+        "to": "January 2020",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "January 2020",
+        "to": "August 2020",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "August 2020",
+        "to": "November 2020",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "November 2020",
+        "to": "April 2021",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "April 2021",
+        "to": "July 2021",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "July 2021",
+        "to": "December 2021",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "December 2021",
+        "to": "March 2022",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "March 2022",
+        "to": "July 2022",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "July 2022",
+        "to": "February 2023",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "February 2023",
+        "to": "June 2023",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "June 2023",
+        "to": "September 2023",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "Senior Home Care | Elderly Home Care Services | Se"
+      },
+      {
+        "from": "September 2023",
+        "to": "June 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "Senior Home Care | Elderly Home Care Services | Se",
+        "title_to": "N/A"
+      }
+    ]
+  },
+  {
+    "domain": "https://nsent.us",
+    "total_snapshots": 76,
+    "analyzed_snapshots": 31,
+    "first_snapshot": "May 2011",
+    "last_snapshot": "August 2024",
+    "consistency_score": 97.5,
+    "niche_changed": false,
+    "change_timeline": [
+      {
+        "from": "May 2011",
+        "to": "August 2011",
+        "similarity": 99.7,
+        "change_percent": 0.3,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "August 2011",
+        "to": "February 2012",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "February 2012",
+        "to": "April 2013",
+        "similarity": 98.5,
+        "change_percent": 1.5,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "April 2013",
+        "to": "August 2013",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "August 2013",
+        "to": "November 2013",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "November 2013",
+        "to": "February 2014",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "February 2014",
+        "to": "June 2014",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "June 2014",
+        "to": "November 2014",
+        "similarity": 95.8,
+        "change_percent": 4.2,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "November 2014",
+        "to": "March 2015",
+        "similarity": 98.0,
+        "change_percent": 2.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "March 2015",
+        "to": "June 2015",
+        "similarity": 99.5,
+        "change_percent": 0.5,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "June 2015",
+        "to": "September 2015",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "September 2015",
+        "to": "January 2016",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "January 2016",
+        "to": "May 2016",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "May 2016",
+        "to": "August 2016",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "August 2016",
+        "to": "October 2017",
+        "similarity": 86.2,
+        "change_percent": 13.8,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "October 2017",
+        "to": "February 2018",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "February 2018",
+        "to": "May 2018",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "May 2018",
+        "to": "August 2018",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "August 2018",
+        "to": "November 2018",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "November 2018",
+        "to": "February 2019",
+        "similarity": 98.0,
+        "change_percent": 2.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "February 2019",
+        "to": "May 2019",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "May 2019",
+        "to": "August 2019",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "August 2019",
+        "to": "November 2019",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "November 2019",
+        "to": "February 2020",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "February 2020",
+        "to": "May 2021",
+        "similarity": 73.0,
+        "change_percent": 27.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "May 2021",
+        "to": "April 2022",
+        "similarity": 99.4,
+        "change_percent": 0.6,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "April 2022",
+        "to": "February 2023",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "February 2023",
+        "to": "May 2023",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "May 2023",
+        "to": "May 2024",
+        "similarity": 75.7,
+        "change_percent": 24.3,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      },
+      {
+        "from": "May 2024",
+        "to": "August 2024",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "North Shore Ear Nose and Throat Associates - Highl",
+        "title_to": "North Shore Ear Nose and Throat Associates - Highl"
+      }
+    ]
+  },
+  {
+    "domain": "https://PacificbeachMedSpa.com",
+    "total_snapshots": 20,
+    "analyzed_snapshots": 9,
+    "first_snapshot": "August 2020",
+    "last_snapshot": "September 2023",
+    "consistency_score": 46.7,
+    "niche_changed": false,
+    "change_timeline": [
+      {
+        "from": "August 2020",
+        "to": "January 2021",
+        "similarity": 26.4,
+        "change_percent": 73.6,
+        "title_from": "Pacific Beach Med Spa Info | Botox | HydraFacial |",
+        "title_to": "Pacific Beach Med Spa Info | Botox | HydraFacial |"
+      },
+      {
+        "from": "January 2021",
+        "to": "August 2021",
+        "similarity": 34.3,
+        "change_percent": 65.7,
+        "title_from": "Pacific Beach Med Spa Info | Botox | HydraFacial |",
+        "title_to": "Pacific Beach Med Spa Info | Pacific Beach Med Spa"
+      },
+      {
+        "from": "August 2021",
+        "to": "December 2021",
+        "similarity": 89.1,
+        "change_percent": 10.9,
+        "title_from": "Pacific Beach Med Spa Info | Pacific Beach Med Spa",
+        "title_to": "Pacific Beach Med Spa Info | Pacific Beach Med Spa"
+      },
+      {
+        "from": "December 2021",
+        "to": "March 2022",
+        "similarity": 6.4,
+        "change_percent": 93.6,
+        "title_from": "Pacific Beach Med Spa Info | Pacific Beach Med Spa",
+        "title_to": "Pacific Beach Med Spa Info | Pacific Beach Med Spa"
+      },
+      {
+        "from": "March 2022",
+        "to": "July 2022",
+        "similarity": 87.9,
+        "change_percent": 12.1,
+        "title_from": "Pacific Beach Med Spa Info | Pacific Beach Med Spa",
+        "title_to": "Pacific Beach Med Spa Info | Pacific Beach Med Spa"
+      },
+      {
+        "from": "July 2022",
+        "to": "October 2022",
+        "similarity": 34.6,
+        "change_percent": 65.4,
+        "title_from": "Pacific Beach Med Spa Info | Pacific Beach Med Spa",
+        "title_to": "HOME | Pacific Beach MedSpa | San Diego"
+      },
+      {
+        "from": "October 2022",
+        "to": "March 2023",
+        "similarity": 58.7,
+        "change_percent": 41.3,
+        "title_from": "HOME | Pacific Beach MedSpa | San Diego",
+        "title_to": "HOME | Pacific Beach MedSpa | San Diego"
+      },
+      {
+        "from": "March 2023",
+        "to": "September 2023",
+        "similarity": 36.5,
+        "change_percent": 63.5,
+        "title_from": "HOME | Pacific Beach MedSpa | San Diego",
+        "title_to": "HOME | Pacific Beach MedSpa | San Diego"
+      }
+    ]
+  },
+  {
+    "domain": "https://PatuxentMedical.com",
+    "total_snapshots": 69,
+    "analyzed_snapshots": 34,
+    "first_snapshot": "November 1999",
+    "last_snapshot": "March 2025",
+    "consistency_score": 60.7,
+    "niche_changed": true,
+    "change_timeline": [
+      {
+        "from": "November 1999",
+        "to": "March 2000",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Patuxent Medical Group",
+        "title_to": "Patuxent Medical Group"
+      },
+      {
+        "from": "March 2000",
+        "to": "June 2000",
+        "similarity": 8.6,
+        "change_percent": 91.4,
+        "title_from": "Patuxent Medical Group",
+        "title_to": "Patuxent Medical Group"
+      },
+      {
+        "from": "June 2000",
+        "to": "October 2000",
+        "similarity": 84.6,
+        "change_percent": 15.4,
+        "title_from": "Patuxent Medical Group",
+        "title_to": "Patuxent Medical Group"
+      },
+      {
+        "from": "October 2000",
+        "to": "January 2001",
+        "similarity": 70.7,
+        "change_percent": 29.3,
+        "title_from": "Patuxent Medical Group",
+        "title_to": "Patuxent Medical Group"
+      },
+      {
+        "from": "January 2001",
+        "to": "May 2001",
+        "similarity": 46.1,
+        "change_percent": 53.9,
+        "title_from": "Patuxent Medical Group",
+        "title_to": "Patuxent Medical Group"
+      },
+      {
+        "from": "May 2001",
+        "to": "December 2001",
+        "similarity": 87.3,
+        "change_percent": 12.7,
+        "title_from": "Patuxent Medical Group",
+        "title_to": "Patuxent Medical Group"
+      },
+      {
+        "from": "December 2001",
+        "to": "March 2002",
+        "similarity": 18.7,
+        "change_percent": 81.3,
+        "title_from": "Patuxent Medical Group",
+        "title_to": "PMG Home"
+      },
+      {
+        "from": "March 2002",
+        "to": "September 2002",
+        "similarity": 89.9,
+        "change_percent": 10.1,
+        "title_from": "PMG Home",
+        "title_to": "Patuxent Medical Group Home Page"
+      },
+      {
+        "from": "September 2002",
+        "to": "January 2003",
+        "similarity": 90.7,
+        "change_percent": 9.3,
+        "title_from": "Patuxent Medical Group Home Page",
+        "title_to": "Patuxent Medical Group Home Page"
+      },
+      {
+        "from": "January 2003",
+        "to": "June 2003",
+        "similarity": 97.5,
+        "change_percent": 2.5,
+        "title_from": "Patuxent Medical Group Home Page",
+        "title_to": "Patuxent Medical Group Home Page"
+      },
+      {
+        "from": "June 2003",
+        "to": "September 2003",
+        "similarity": 96.5,
+        "change_percent": 3.5,
+        "title_from": "Patuxent Medical Group Home Page",
+        "title_to": "Patuxent Medical Group Columbia Maryland Doctors"
+      },
+      {
+        "from": "September 2003",
+        "to": "February 2004",
+        "similarity": 90.1,
+        "change_percent": 9.9,
+        "title_from": "Patuxent Medical Group Columbia Maryland Doctors",
+        "title_to": "Patuxent Medical Group Columbia Maryland Doctors"
+      },
+      {
+        "from": "February 2004",
+        "to": "May 2004",
+        "similarity": 99.9,
+        "change_percent": 0.1,
+        "title_from": "Patuxent Medical Group Columbia Maryland Doctors",
+        "title_to": "Patuxent Medical Group Columbia Maryland Doctors"
+      },
+      {
+        "from": "May 2004",
+        "to": "August 2004",
+        "similarity": 99.9,
+        "change_percent": 0.1,
+        "title_from": "Patuxent Medical Group Columbia Maryland Doctors",
+        "title_to": "Patuxent Medical Group Columbia Maryland Doctors"
+      },
+      {
+        "from": "August 2004",
+        "to": "December 2004",
+        "similarity": 7.5,
+        "change_percent": 92.5,
+        "title_from": "Patuxent Medical Group Columbia Maryland Doctors",
+        "title_to": "Site Temporarily Unavailable"
+      },
+      {
+        "from": "December 2004",
+        "to": "June 2006",
+        "similarity": 2.3,
+        "change_percent": 97.7,
+        "title_from": "Site Temporarily Unavailable",
+        "title_to": "Domain Name Renewal and web hosting from Network S"
+      },
+      {
+        "from": "June 2006",
+        "to": "March 2007",
+        "similarity": 3.4,
+        "change_percent": 96.6,
+        "title_from": "Domain Name Renewal and web hosting from Network S",
+        "title_to": "patuxentmedical.com\n    \n            - Welcome!"
+      },
+      {
+        "from": "March 2007",
+        "to": "August 2013",
+        "similarity": 16.7,
+        "change_percent": 83.3,
+        "title_from": "patuxentmedical.com\n    \n            - Welcome!",
+        "title_to": "PatuxentMedical.com\n            \n                 "
+      },
+      {
+        "from": "August 2013",
+        "to": "January 2014",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "PatuxentMedical.com\n            \n                 ",
+        "title_to": "N/A"
+      },
+      {
+        "from": "January 2014",
+        "to": "June 2019",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "Home | Lexington Park, MD | Patuxent Medical Clini"
+      },
+      {
+        "from": "June 2019",
+        "to": "August 2020",
+        "similarity": 93.3,
+        "change_percent": 6.7,
+        "title_from": "Home | Lexington Park, MD | Patuxent Medical Clini",
+        "title_to": "Patuxent Medical Clinic"
+      },
+      {
+        "from": "August 2020",
+        "to": "November 2020",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Patuxent Medical Clinic",
+        "title_to": "Patuxent Medical Clinic"
+      },
+      {
+        "from": "November 2020",
+        "to": "April 2021",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Patuxent Medical Clinic",
+        "title_to": "Patuxent Medical Clinic"
+      },
+      {
+        "from": "April 2021",
+        "to": "July 2021",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Patuxent Medical Clinic",
+        "title_to": "Patuxent Medical Clinic"
+      },
+      {
+        "from": "July 2021",
+        "to": "November 2021",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Patuxent Medical Clinic",
+        "title_to": "Patuxent Medical Clinic"
+      },
+      {
+        "from": "November 2021",
+        "to": "April 2022",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Patuxent Medical Clinic",
+        "title_to": "Patuxent Medical Clinic"
+      },
+      {
+        "from": "April 2022",
+        "to": "October 2022",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Patuxent Medical Clinic",
+        "title_to": "Patuxent Medical Clinic"
+      },
+      {
+        "from": "October 2022",
+        "to": "October 2023",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "Patuxent Medical Clinic",
+        "title_to": "N/A"
+      },
+      {
+        "from": "October 2023",
+        "to": "February 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "February 2024",
+        "to": "June 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "June 2024",
+        "to": "September 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "\u5f00\u4e91\u5728\u7ebf\u767b\u5f55-\u5f00\u4e91\uff08\u4e2d\u56fd\uff09"
+      },
+      {
+        "from": "September 2024",
+        "to": "January 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "\u5f00\u4e91\u5728\u7ebf\u767b\u5f55-\u5f00\u4e91\uff08\u4e2d\u56fd\uff09",
+        "title_to": "\u5f00\u4e91\u5728\u7ebf\u767b\u5f55-\u5f00\u4e91\uff08\u4e2d\u56fd\uff09"
+      },
+      {
+        "from": "January 2025",
+        "to": "March 2025",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "\u5f00\u4e91\u5728\u7ebf\u767b\u5f55-\u5f00\u4e91\uff08\u4e2d\u56fd\uff09",
+        "title_to": "\u5f00\u4e91\u5728\u7ebf\u767b\u5f55-\u5f00\u4e91\uff08\u4e2d\u56fd\uff09"
+      }
+    ]
+  },
+  {
+    "domain": "https://pbrcseattle.com",
+    "total_snapshots": 24,
+    "analyzed_snapshots": 15,
+    "first_snapshot": "August 2008",
+    "last_snapshot": "August 2018",
+    "consistency_score": 67.1,
+    "niche_changed": true,
+    "change_timeline": [
+      {
+        "from": "August 2008",
+        "to": "December 2008",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Pacific Balance and Rehabilitation Clinic : Seattl",
+        "title_to": "Pacific Balance and Rehabilitation Clinic : Seattl"
+      },
+      {
+        "from": "December 2008",
+        "to": "September 2009",
+        "similarity": 99.5,
+        "change_percent": 0.5,
+        "title_from": "Pacific Balance and Rehabilitation Clinic : Seattl",
+        "title_to": "Pacific Balance and Rehabilitation Clinic : Seattl"
+      },
+      {
+        "from": "September 2009",
+        "to": "February 2011",
+        "similarity": 46.1,
+        "change_percent": 53.9,
+        "title_from": "Pacific Balance and Rehabilitation Clinic : Seattl",
+        "title_to": "Pacific Balance & Rehabilitation Clinic"
+      },
+      {
+        "from": "February 2011",
+        "to": "February 2012",
+        "similarity": 16.9,
+        "change_percent": 83.1,
+        "title_from": "Pacific Balance & Rehabilitation Clinic",
+        "title_to": "Pacific Balance & Rehabilitation Clinic"
+      },
+      {
+        "from": "February 2012",
+        "to": "June 2013",
+        "similarity": 9.2,
+        "change_percent": 90.8,
+        "title_from": "Pacific Balance & Rehabilitation Clinic",
+        "title_to": "Pacific Balance & Rehabilitation Clinic"
+      },
+      {
+        "from": "June 2013",
+        "to": "January 2014",
+        "similarity": 90.2,
+        "change_percent": 9.8,
+        "title_from": "Pacific Balance & Rehabilitation Clinic",
+        "title_to": "Pacific Balance & Rehabilitation Clinic"
+      },
+      {
+        "from": "January 2014",
+        "to": "December 2014",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Pacific Balance & Rehabilitation Clinic",
+        "title_to": "Pacific Balance & Rehabilitation Clinic"
+      },
+      {
+        "from": "December 2014",
+        "to": "April 2015",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Pacific Balance & Rehabilitation Clinic",
+        "title_to": "Pacific Balance & Rehabilitation Clinic"
+      },
+      {
+        "from": "April 2015",
+        "to": "February 2016",
+        "similarity": 10.3,
+        "change_percent": 89.7,
+        "title_from": "Pacific Balance & Rehabilitation Clinic",
+        "title_to": "Pacific Balance and Rehabilitation Clinic"
+      },
+      {
+        "from": "February 2016",
+        "to": "October 2016",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Pacific Balance and Rehabilitation Clinic",
+        "title_to": "Pacific Balance and Rehabilitation Clinic"
+      },
+      {
+        "from": "October 2016",
+        "to": "June 2017",
+        "similarity": 64.6,
+        "change_percent": 35.4,
+        "title_from": "Pacific Balance and Rehabilitation Clinic",
+        "title_to": "Pacific Balance and Rehabilitation Clinic"
+      },
+      {
+        "from": "June 2017",
+        "to": "September 2017",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Pacific Balance and Rehabilitation Clinic",
+        "title_to": "Pacific Balance and Rehabilitation Clinic"
+      },
+      {
+        "from": "September 2017",
+        "to": "March 2018",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Pacific Balance and Rehabilitation Clinic",
+        "title_to": "Pacific Balance and Rehabilitation Clinic"
+      },
+      {
+        "from": "March 2018",
+        "to": "August 2018",
+        "similarity": 2.2,
+        "change_percent": 97.8,
+        "title_from": "Pacific Balance and Rehabilitation Clinic",
+        "title_to": "\u00e7\u0094\u009f\u00e6\u00b4\u00bb\u00e5\u00b9\u00bd\u00e9\u00bb\u0098\u00e8\u00a7\u00a3\u00e7\u008e\u0084\u00e6\u009c\u00ba\u00ef\u00bc\u008c\u00e7\u0094\u009f\u00e6\u00b4\u00bb\u00e4\u00b8\u008d\u00e4\u00bb\u0085\u00e6\u009c\u0089\u00e8\u008b\u009f\u00e4\u00b8\u0094\u00e5\u00b9\u00bd\u00e9\u00bb"
+      }
+    ]
+  },
+  {
+    "domain": "https://PremierDiabetesCareAndMedical.com",
+    "total_snapshots": 7,
+    "analyzed_snapshots": 6,
+    "first_snapshot": "December 2021",
+    "last_snapshot": "March 2025",
+    "consistency_score": 0.0,
+    "niche_changed": true,
+    "change_timeline": [
+      {
+        "from": "December 2021",
+        "to": "April 2023",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "April 2023",
+        "to": "December 2023",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "December 2023",
+        "to": "September 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "September 2024",
+        "to": "December 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "December 2024",
+        "to": "March 2025",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      }
+    ]
+  },
+  {
+    "domain": "https://TheWrightPetNutrition.com",
+    "total_snapshots": 28,
+    "analyzed_snapshots": 18,
+    "first_snapshot": "June 2012",
+    "last_snapshot": "May 2025",
+    "consistency_score": 58.1,
+    "niche_changed": true,
+    "change_timeline": [
+      {
+        "from": "June 2012",
+        "to": "June 2013",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "Wright Pet Nutrition | veterinary wellness remedie",
+        "title_to": "Wright Pet Nutrition | veterinary wellness remedie"
+      },
+      {
+        "from": "June 2013",
+        "to": "January 2014",
+        "similarity": 4.9,
+        "change_percent": 95.1,
+        "title_from": "Wright Pet Nutrition | veterinary wellness remedie",
+        "title_to": "thewrightpetnutrition.com at Directnic"
+      },
+      {
+        "from": "January 2014",
+        "to": "August 2014",
+        "similarity": 0.5,
+        "change_percent": 99.5,
+        "title_from": "thewrightpetnutrition.com at Directnic",
+        "title_to": "The Wright Pet Nutrition | ,"
+      },
+      {
+        "from": "August 2014",
+        "to": "December 2014",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "The Wright Pet Nutrition | ,",
+        "title_to": "The Wright Pet Nutrition | ,"
+      },
+      {
+        "from": "December 2014",
+        "to": "June 2015",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "The Wright Pet Nutrition | ,",
+        "title_to": "The Wright Pet Nutrition | ,"
+      },
+      {
+        "from": "June 2015",
+        "to": "November 2015",
+        "similarity": 3.3,
+        "change_percent": 96.7,
+        "title_from": "The Wright Pet Nutrition | ,",
+        "title_to": "The Wright Pet Nutrition"
+      },
+      {
+        "from": "November 2015",
+        "to": "March 2016",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "The Wright Pet Nutrition",
+        "title_to": "The Wright Pet Nutrition"
+      },
+      {
+        "from": "March 2016",
+        "to": "July 2016",
+        "similarity": 80.0,
+        "change_percent": 20.0,
+        "title_from": "The Wright Pet Nutrition",
+        "title_to": "The Wright Pet Nutrition"
+      },
+      {
+        "from": "July 2016",
+        "to": "April 2017",
+        "similarity": 81.3,
+        "change_percent": 18.7,
+        "title_from": "The Wright Pet Nutrition",
+        "title_to": "The Wright Pet Nutrition"
+      },
+      {
+        "from": "April 2017",
+        "to": "September 2017",
+        "similarity": 99.7,
+        "change_percent": 0.3,
+        "title_from": "The Wright Pet Nutrition",
+        "title_to": "The Wright Pet Nutrition"
+      },
+      {
+        "from": "September 2017",
+        "to": "March 2018",
+        "similarity": 96.9,
+        "change_percent": 3.1,
+        "title_from": "The Wright Pet Nutrition",
+        "title_to": "The Wright Pet Nutrition \u2013 Health Improvement for "
+      },
+      {
+        "from": "March 2018",
+        "to": "July 2018",
+        "similarity": 80.2,
+        "change_percent": 19.8,
+        "title_from": "The Wright Pet Nutrition \u2013 Health Improvement for ",
+        "title_to": "The Wright Pet Nutrition \u2013 Health Improvement for "
+      },
+      {
+        "from": "July 2018",
+        "to": "January 2019",
+        "similarity": 100.0,
+        "change_percent": 0.0,
+        "title_from": "The Wright Pet Nutrition \u2013 Health Improvement for ",
+        "title_to": "The Wright Pet Nutrition \u2013 Health Improvement for "
+      },
+      {
+        "from": "January 2019",
+        "to": "June 2022",
+        "similarity": 40.7,
+        "change_percent": 59.3,
+        "title_from": "The Wright Pet Nutrition \u2013 Health Improvement for ",
+        "title_to": "The Wright Pet Nutrition | Health Improvement for "
+      },
+      {
+        "from": "June 2022",
+        "to": "December 2024",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "The Wright Pet Nutrition | Health Improvement for ",
+        "title_to": "N/A"
+      },
+      {
+        "from": "December 2024",
+        "to": "March 2025",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "March 2025",
+        "to": "May 2025",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      }
+    ]
+  },
+  {
+    "domain": "https://tydvet.com",
+    "total_snapshots": 9,
+    "analyzed_snapshots": 5,
+    "first_snapshot": "August 2018",
+    "last_snapshot": "July 2023",
+    "consistency_score": 0.0,
+    "niche_changed": true,
+    "change_timeline": [
+      {
+        "from": "August 2018",
+        "to": "July 2022",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "Home - TYDVET In Home Veterinary Service",
+        "title_to": "N/A"
+      },
+      {
+        "from": "July 2022",
+        "to": "December 2022",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "December 2022",
+        "to": "March 2023",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "N/A"
+      },
+      {
+        "from": "March 2023",
+        "to": "July 2023",
+        "similarity": 0.0,
+        "change_percent": 100.0,
+        "title_from": "N/A",
+        "title_to": "Der vertrauensw\u00fcrdigste Experte f\u00fcr Fernreisen. Ge"
+      }
+    ]
+  }
+]
