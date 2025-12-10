@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wayback Checker | Website History Analyzer</title>
+    <title>Domain Tools | Wayback & GMB Checker</title>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Crimson+Pro:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -23,11 +23,7 @@
             --danger: #ff6b6b;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
             font-family: 'Crimson Pro', Georgia, serif;
@@ -37,14 +33,10 @@
             line-height: 1.6;
         }
 
-        /* Animated background */
         body::before {
             content: '';
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+            top: 0; left: 0; right: 0; bottom: 0;
             background: 
                 radial-gradient(ellipse at 20% 20%, rgba(212, 168, 83, 0.08) 0%, transparent 50%),
                 radial-gradient(ellipse at 80% 80%, rgba(78, 205, 196, 0.05) 0%, transparent 50%),
@@ -52,18 +44,13 @@
             z-index: -1;
         }
 
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
 
-        /* Header */
         header {
             text-align: center;
-            padding: 3rem 0;
+            padding: 2rem 0;
             border-bottom: 1px solid var(--border);
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
 
         .logo {
@@ -72,11 +59,11 @@
             color: var(--accent-gold);
             letter-spacing: 4px;
             text-transform: uppercase;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
         h1 {
-            font-size: 3.5rem;
+            font-size: 3rem;
             font-weight: 400;
             letter-spacing: -1px;
             margin-bottom: 0.5rem;
@@ -86,11 +73,33 @@
             background-clip: text;
         }
 
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1.25rem;
-            font-style: italic;
+        .subtitle { color: var(--text-secondary); font-size: 1.15rem; font-style: italic; }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
         }
+
+        .tab {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.9rem;
+            padding: 1rem 2rem;
+            background: transparent;
+            border: none;
+            border-bottom: 3px solid transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tab:hover { color: var(--text-secondary); }
+        .tab.active { color: var(--accent-gold); border-bottom-color: var(--accent-gold); }
+        .tab.active.gmb { color: var(--accent-teal); border-bottom-color: var(--accent-teal); }
 
         /* Input Section */
         .input-section {
@@ -106,6 +115,8 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         .input-header h2 {
@@ -116,30 +127,29 @@
             text-transform: uppercase;
         }
 
-        .interval-select {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
+        .input-header h2.gmb { color: var(--accent-teal); }
 
-        .interval-select label {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
+        .input-options { display: flex; gap: 1.5rem; flex-wrap: wrap; }
 
-        .interval-select select {
+        .option-group { display: flex; align-items: center; gap: 0.5rem; }
+        .option-group label { font-size: 0.85rem; color: var(--text-secondary); }
+
+        .option-group select, .custom-input {
             background: var(--bg-deep);
             border: 1px solid var(--border);
             color: var(--text-primary);
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 0.75rem;
             border-radius: 8px;
             font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
             cursor: pointer;
         }
 
+        .option-group select:focus, .custom-input:focus { outline: none; border-color: var(--accent-gold); }
+
         textarea {
             width: 100%;
-            min-height: 200px;
+            min-height: 180px;
             background: var(--bg-deep);
             border: 1px solid var(--border);
             border-radius: 12px;
@@ -148,17 +158,10 @@
             font-family: 'Space Mono', monospace;
             font-size: 0.95rem;
             resize: vertical;
-            transition: border-color 0.3s;
         }
 
-        textarea:focus {
-            outline: none;
-            border-color: var(--accent-gold);
-        }
-
-        textarea::placeholder {
-            color: var(--text-muted);
-        }
+        textarea:focus { outline: none; border-color: var(--accent-gold); }
+        textarea::placeholder { color: var(--text-muted); }
 
         .input-footer {
             display: flex;
@@ -176,7 +179,7 @@
         .btn {
             font-family: 'Space Mono', monospace;
             font-size: 0.9rem;
-            padding: 1rem 2.5rem;
+            padding: 1rem 2rem;
             border: none;
             border-radius: 8px;
             cursor: pointer;
@@ -191,10 +194,16 @@
             font-weight: 700;
         }
 
+        .btn-primary.gmb {
+            background: linear-gradient(135deg, var(--accent-teal) 0%, #2a9d8f 100%);
+        }
+
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 30px rgba(212, 168, 83, 0.3);
         }
+
+        .btn-primary.gmb:hover { box-shadow: 0 8px 30px rgba(78, 205, 196, 0.3); }
 
         .btn-primary:disabled {
             opacity: 0.5;
@@ -202,6 +211,44 @@
             transform: none;
             box-shadow: none;
         }
+
+        .btn-secondary {
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-weight: 400;
+            padding: 0.75rem 1.25rem;
+            font-size: 0.8rem;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary.success {
+            border-color: var(--success);
+            color: var(--success);
+        }
+
+        .results-actions {
+            display: flex;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .mode-desc {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            padding: 1rem;
+            background: var(--bg-deep);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .mode-desc strong { color: var(--text-secondary); }
 
         /* Progress Section */
         .progress-section {
@@ -213,10 +260,7 @@
             margin-bottom: 2rem;
         }
 
-        .progress-section.active {
-            display: block;
-            animation: fadeIn 0.5s ease;
-        }
+        .progress-section.active { display: block; animation: fadeIn 0.5s ease; }
 
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
@@ -252,56 +296,44 @@
             width: 0%;
         }
 
+        .progress-bar.gmb {
+            background: linear-gradient(90deg, var(--accent-teal) 0%, #2a9d8f 100%);
+        }
+
         .log-container {
-            max-height: 150px;
+            max-height: 120px;
             overflow-y: auto;
             background: var(--bg-deep);
             border-radius: 8px;
             padding: 1rem;
             font-family: 'Space Mono', monospace;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: var(--text-muted);
         }
 
-        .log-entry {
-            padding: 0.25rem 0;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .log-entry:last-child {
-            border-bottom: none;
-        }
+        .log-entry { padding: 0.2rem 0; border-bottom: 1px solid var(--border); }
+        .log-entry:last-child { border-bottom: none; }
 
         /* Results Section */
-        .results-section {
-            display: none;
-        }
-
-        .results-section.active {
-            display: block;
-            animation: fadeIn 0.5s ease;
-        }
+        .results-section { display: none; }
+        .results-section.active { display: block; animation: fadeIn 0.5s ease; }
 
         .results-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
-        .results-header h2 {
-            font-size: 2rem;
-            font-weight: 400;
-        }
+        .results-header h2 { font-size: 1.75rem; font-weight: 400; }
 
-        .results-stats {
-            display: flex;
-            gap: 1.5rem;
-        }
+        .results-stats { display: flex; gap: 1rem; flex-wrap: wrap; }
 
         .stat {
             text-align: center;
-            padding: 1rem 1.5rem;
+            padding: 0.75rem 1.25rem;
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 12px;
@@ -309,24 +341,20 @@
 
         .stat-value {
             font-family: 'Space Mono', monospace;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--accent-gold);
         }
 
         .stat-label {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         /* Result Cards */
-        .results-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
+        .results-grid { display: flex; flex-direction: column; gap: 1rem; }
 
         .result-card {
             background: var(--bg-card);
@@ -336,80 +364,81 @@
             transition: all 0.3s ease;
         }
 
-        .result-card:hover {
-            border-color: var(--accent-gold-dim);
-        }
-
-        .result-card.failed {
-            border-left: 3px solid var(--danger);
-        }
-
-        .result-card.success {
-            border-left: 3px solid var(--success);
-        }
+        .result-card:hover { border-color: var(--accent-gold-dim); }
+        .result-card.failed { border-left: 3px solid var(--danger); }
+        .result-card.success { border-left: 3px solid var(--success); }
+        .result-card.has-gmb { border-left: 3px solid var(--accent-teal); }
+        .result-card.no-gmb { border-left: 3px solid var(--text-muted); }
 
         .result-summary {
             padding: 1.25rem 1.5rem;
             cursor: pointer;
             display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr 1fr auto;
+            grid-template-columns: 2fr repeat(4, 1fr) auto;
             align-items: center;
             gap: 1rem;
         }
 
-        .result-summary:hover {
-            background: var(--bg-hover);
-        }
+        .result-summary:hover { background: var(--bg-hover); }
 
         .domain-name {
             font-family: 'Space Mono', monospace;
-            font-size: 1rem;
+            font-size: 0.95rem;
             color: var(--text-primary);
             word-break: break-all;
         }
+
+        .domain-cell { display: flex; align-items: center; gap: 0.5rem; }
+
+        .copy-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .copy-btn:hover { border-color: var(--accent-gold); background: var(--bg-hover); }
+        .copy-btn svg { width: 14px; height: 14px; color: var(--text-secondary); }
+        .copy-btn:hover svg { color: var(--accent-gold); }
+        .copy-btn.copied { border-color: var(--success); background: rgba(78, 205, 196, 0.1); }
+        .copy-btn.copied svg { color: var(--success); }
 
         .score-badge {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 20px;
             font-family: 'Space Mono', monospace;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             font-weight: 700;
         }
 
-        .score-high {
-            background: rgba(78, 205, 196, 0.15);
-            color: var(--success);
+        .score-high { background: rgba(78, 205, 196, 0.15); color: var(--success); }
+        .score-medium { background: rgba(247, 183, 49, 0.15); color: var(--warning); }
+        .score-low { background: rgba(255, 107, 107, 0.15); color: var(--danger); }
+
+        .gmb-badge {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
         }
 
-        .score-medium {
-            background: rgba(247, 183, 49, 0.15);
-            color: var(--warning);
-        }
+        .gmb-badge.has { background: rgba(78, 205, 196, 0.15); color: var(--success); }
+        .gmb-badge.none { background: rgba(90, 90, 90, 0.15); color: var(--text-muted); }
 
-        .score-low {
-            background: rgba(255, 107, 107, 0.15);
-            color: var(--danger);
-        }
-
-        .niche-status {
-            font-size: 0.9rem;
-        }
-
-        .niche-same {
-            color: var(--success);
-        }
-
-        .niche-changed {
-            color: var(--warning);
-        }
-
-        .date-range {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
+        .niche-status { font-size: 0.85rem; }
+        .niche-same { color: var(--success); }
+        .niche-changed { color: var(--warning); }
+        .date-range { font-size: 0.8rem; color: var(--text-secondary); }
 
         .expand-icon {
             font-size: 1.5rem;
@@ -417,9 +446,7 @@
             transition: transform 0.3s;
         }
 
-        .result-card.expanded .expand-icon {
-            transform: rotate(180deg);
-        }
+        .result-card.expanded .expand-icon { transform: rotate(180deg); }
 
         .result-details {
             display: none;
@@ -427,15 +454,41 @@
             border-top: 1px solid var(--border);
         }
 
-        .result-card.expanded .result-details {
-            display: block;
-            animation: slideDown 0.3s ease;
-        }
+        .result-card.expanded .result-details { display: block; animation: slideDown 0.3s ease; }
 
         @keyframes slideDown {
-            from { opacity: 0; max-height: 0; }
-            to { opacity: 1; max-height: 2000px; }
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
+
+        /* GMB Info */
+        .gmb-info {
+            background: var(--bg-deep);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .gmb-info h4 {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            color: var(--accent-teal);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+        }
+
+        .gmb-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .gmb-detail { display: flex; flex-direction: column; gap: 0.25rem; }
+        .gmb-detail-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+        .gmb-detail-value { font-family: 'Space Mono', monospace; font-size: 0.9rem; color: var(--text-primary); }
+        .gmb-detail-value a { color: var(--accent-teal); text-decoration: none; }
+        .gmb-detail-value a:hover { text-decoration: underline; }
 
         /* Story Section */
         .story-section {
@@ -455,24 +508,16 @@
         }
 
         .story-content {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             line-height: 1.8;
             color: var(--text-secondary);
         }
 
-        .story-content strong {
-            color: var(--text-primary);
-        }
-
-        .story-content em {
-            color: var(--accent-gold);
-            font-style: normal;
-        }
+        .story-content strong { color: var(--text-primary); }
+        .story-content em { color: var(--accent-gold); font-style: normal; }
 
         /* Timeline */
-        .timeline-section {
-            margin-top: 1.5rem;
-        }
+        .timeline-section { margin-top: 1.5rem; }
 
         .timeline-section h4 {
             font-family: 'Space Mono', monospace;
@@ -483,60 +528,38 @@
             margin-bottom: 1rem;
         }
 
-        .timeline {
-            position: relative;
-            padding-left: 2rem;
-        }
+        .timeline { position: relative; padding-left: 2rem; }
 
         .timeline::before {
             content: '';
             position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
+            left: 0; top: 0; bottom: 0;
             width: 2px;
             background: linear-gradient(180deg, var(--accent-gold) 0%, var(--accent-teal) 100%);
         }
 
-        .timeline-item {
-            position: relative;
-            padding: 1rem 0;
-            padding-left: 1.5rem;
-        }
+        .timeline-item { position: relative; padding: 1rem 0 1rem 1.5rem; }
 
         .timeline-item::before {
             content: '';
             position: absolute;
-            left: -2rem;
-            top: 1.35rem;
-            width: 10px;
-            height: 10px;
+            left: -2rem; top: 1.35rem;
+            width: 10px; height: 10px;
             border-radius: 50%;
             background: var(--bg-card);
             border: 2px solid var(--accent-gold);
         }
 
-        .timeline-item.high-change::before {
-            border-color: var(--danger);
-            background: var(--danger);
-        }
-
-        .timeline-item.medium-change::before {
-            border-color: var(--warning);
-        }
+        .timeline-item.high-change::before { border-color: var(--danger); background: var(--danger); }
+        .timeline-item.medium-change::before { border-color: var(--warning); }
 
         .timeline-date {
             font-family: 'Space Mono', monospace;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
         }
 
-        .timeline-change {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 0.5rem;
-        }
+        .timeline-change { display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem; }
 
         .change-bar {
             flex: 1;
@@ -546,27 +569,14 @@
             overflow: hidden;
         }
 
-        .change-fill {
-            height: 100%;
-            border-radius: 4px;
-            transition: width 0.5s ease;
-        }
-
-        .change-fill.stable {
-            background: var(--success);
-        }
-
-        .change-fill.moderate {
-            background: var(--warning);
-        }
-
-        .change-fill.major {
-            background: var(--danger);
-        }
+        .change-fill { height: 100%; border-radius: 4px; }
+        .change-fill.stable { background: var(--success); }
+        .change-fill.moderate { background: var(--warning); }
+        .change-fill.major { background: var(--danger); }
 
         .change-percent {
             font-family: 'Space Mono', monospace;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             min-width: 60px;
             text-align: right;
         }
@@ -587,28 +597,68 @@
 
         .keyword-box h5 {
             font-family: 'Space Mono', monospace;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             color: var(--text-muted);
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 0.75rem;
         }
 
-        .keyword-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-        }
+        .keyword-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 
         .keyword-tag {
             background: var(--bg-card);
             padding: 0.35rem 0.75rem;
             border-radius: 4px;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-secondary);
         }
 
-        /* Error state */
+        /* Archive Links */
+        .archive-links {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem 0;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+
+        .archive-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            background: var(--bg-deep);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .archive-btn:hover {
+            border-color: var(--accent-gold);
+            color: var(--accent-gold);
+            transform: translateY(-2px);
+        }
+
+        .archive-btn.primary {
+            background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-dim) 100%);
+            color: var(--bg-deep);
+            border: none;
+            font-weight: 700;
+        }
+
+        .archive-btn.gmb-link {
+            background: linear-gradient(135deg, var(--accent-teal) 0%, #2a9d8f 100%);
+            color: var(--bg-deep);
+            border: none;
+            font-weight: 700;
+        }
+
         .error-message {
             color: var(--danger);
             font-family: 'Space Mono', monospace;
@@ -616,73 +666,85 @@
             padding: 1rem;
         }
 
-        /* Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: var(--bg-deep); }
+        ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
 
-        ::-webkit-scrollbar-track {
-            background: var(--bg-deep);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--border);
-            border-radius: 4px;
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--text-muted);
-        }
-
-        /* Responsive */
         @media (max-width: 1024px) {
-            .result-summary {
-                grid-template-columns: 1fr 1fr;
-                gap: 0.75rem;
-            }
-            
-            .keywords-section {
-                grid-template-columns: 1fr;
-            }
+            .result-summary { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+            .keywords-section { grid-template-columns: 1fr; }
         }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-            
-            .result-summary {
-                grid-template-columns: 1fr;
-            }
-            
-            .results-stats {
-                flex-wrap: wrap;
-            }
+            h1 { font-size: 2rem; }
+            .result-summary { grid-template-columns: 1fr; }
+            .tabs { flex-wrap: wrap; }
+            .tab { padding: 0.75rem 1rem; font-size: 0.8rem; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <div class="logo">Internet Archive Explorer</div>
-            <h1>Wayback Checker</h1>
-            <p class="subtitle">Uncover the hidden stories of websites through time</p>
+            <div class="logo">Domain Analysis Suite</div>
+            <h1>Domain Tools</h1>
+            <p class="subtitle">Wayback history analysis & Google My Business detection</p>
         </header>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active" onclick="switchTab('wayback')" id="tab-wayback">
+                📜 Wayback
+            </button>
+            <button class="tab" onclick="switchTab('gmb')" id="tab-gmb">
+                🏢 GMB Checker
+            </button>
+        </div>
 
         <section class="input-section">
             <div class="input-header">
-                <h2>Enter Domains</h2>
-                <div class="interval-select">
-                    <label for="interval">Snapshot Interval:</label>
-                    <select id="interval">
-                        <option value="1">Every month</option>
-                        <option value="3" selected>Every 3 months</option>
-                        <option value="6">Every 6 months</option>
-                        <option value="12">Every year</option>
-                    </select>
+                <h2 id="inputTitle">Wayback Analysis</h2>
+                <div class="input-options" id="inputOptions">
+                    <div class="option-group" id="intervalOption">
+                        <label for="interval">Interval:</label>
+                        <select id="interval">
+                            <option value="1">Monthly</option>
+                            <option value="3" selected>3 months</option>
+                            <option value="6">6 months</option>
+                            <option value="12">Yearly</option>
+                        </select>
+                    </div>
+                    <div class="option-group" id="workersOption">
+                        <label for="workers">Parallel:</label>
+                        <select id="workers">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3" selected>3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="option-group" id="gmbParallelOption" style="display: none;">
+                        <label for="gmbParallel">Parallel:</label>
+                        <select id="gmbParallel" onchange="toggleCustomParallel()">
+                            <option value="3">3</option>
+                            <option value="5" selected>5</option>
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="custom">Custom...</option>
+                        </select>
+                        <input type="number" id="gmbParallelCustom" min="1" max="100" value="25" 
+                               style="display: none; width: 60px; margin-left: 0.5rem;"
+                               class="custom-input" placeholder="1-100">
+                    </div>
                 </div>
             </div>
+            
+            <div class="mode-desc" id="modeDesc">
+                <strong>📜 Wayback Analysis:</strong> Check website consistency and changes over time using the Internet Archive.
+            </div>
+            
             <textarea id="domains" placeholder="Enter domains (one per line)&#10;&#10;example.com&#10;another-site.org&#10;website.net"></textarea>
             <div class="input-footer">
                 <span class="domain-count" id="domainCount">0 domains</span>
@@ -694,7 +756,7 @@
 
         <section class="progress-section" id="progressSection">
             <div class="progress-header">
-                <h3>Analysis in Progress</h3>
+                <h3 id="progressTitle">Analysis in Progress</h3>
                 <span class="progress-status" id="progressStatus">Initializing...</span>
             </div>
             <div class="progress-bar-container">
@@ -705,8 +767,19 @@
 
         <section class="results-section" id="resultsSection">
             <div class="results-header">
-                <h2>Analysis Results</h2>
+                <h2 id="resultsTitle">Analysis Results</h2>
                 <div class="results-stats" id="resultsStats"></div>
+            </div>
+            <div class="results-actions" id="resultsActions" style="display: none;">
+                <button class="btn btn-secondary" onclick="exportCSV()" title="Download results as CSV">
+                    📥 Export CSV
+                </button>
+                <button class="btn btn-secondary" onclick="copyGMBDomains()" id="copyGmbBtn" style="display: none;" title="Copy domains with GMB">
+                    📋 Copy GMB Domains
+                </button>
+                <button class="btn btn-secondary" onclick="copyAllDomains()" title="Copy all domains">
+                    📋 Copy All
+                </button>
             </div>
             <div class="results-grid" id="resultsGrid"></div>
         </section>
@@ -716,6 +789,8 @@
         let sessionId = null;
         let pollInterval = null;
         let lastResultCount = 0;
+        let currentMode = 'wayback';
+        let allResults = [];
 
         // Update domain count
         document.getElementById('domains').addEventListener('input', function() {
@@ -723,17 +798,88 @@
             document.getElementById('domainCount').textContent = `${domains.length} domain${domains.length !== 1 ? 's' : ''}`;
         });
 
+        function toggleCustomParallel() {
+            const select = document.getElementById('gmbParallel');
+            const customInput = document.getElementById('gmbParallelCustom');
+            if (select.value === 'custom') {
+                customInput.style.display = 'inline-block';
+                customInput.focus();
+            } else {
+                customInput.style.display = 'none';
+            }
+        }
+
+        function getGmbParallel() {
+            const select = document.getElementById('gmbParallel');
+            if (select.value === 'custom') {
+                const custom = parseInt(document.getElementById('gmbParallelCustom').value) || 5;
+                return Math.min(Math.max(custom, 1), 100);
+            }
+            return parseInt(select.value);
+        }
+
+        function switchTab(mode) {
+            currentMode = mode;
+            
+            // Update tab styles
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active', 'gmb'));
+            const activeTab = document.getElementById(`tab-${mode}`);
+            activeTab.classList.add('active');
+            if (mode === 'gmb') activeTab.classList.add('gmb');
+            
+            // Update UI based on mode
+            const title = document.getElementById('inputTitle');
+            const btn = document.getElementById('analyzeBtn');
+            const desc = document.getElementById('modeDesc');
+            const intervalOpt = document.getElementById('intervalOption');
+            const workersOpt = document.getElementById('workersOption');
+            const gmbParallelOpt = document.getElementById('gmbParallelOption');
+            
+            title.className = '';
+            btn.className = 'btn btn-primary';
+            
+            if (mode === 'wayback') {
+                title.textContent = 'Wayback Analysis';
+                btn.textContent = 'Analyze History';
+                desc.innerHTML = '<strong>📜 Wayback Analysis:</strong> Check website consistency and changes over time using the Internet Archive.';
+                intervalOpt.style.display = 'flex';
+                workersOpt.style.display = 'flex';
+                gmbParallelOpt.style.display = 'none';
+            } else if (mode === 'gmb') {
+                title.textContent = 'GMB Checker';
+                title.classList.add('gmb');
+                btn.textContent = 'Check GMB';
+                btn.classList.add('gmb');
+                desc.innerHTML = '<strong>🏢 GMB Checker:</strong> Fast parallel GMB detection using browser automation. Verifies exact domain match.';
+                intervalOpt.style.display = 'none';
+                workersOpt.style.display = 'none';
+                gmbParallelOpt.style.display = 'flex';
+            }
+        }
+
         function pollStatus() {
             if (!sessionId) return;
             
             fetch(`/api/status/${sessionId}`)
                 .then(res => res.json())
                 .then(data => {
-                    // Update progress
+                    const mode = data.mode || 'wayback';
+                    
                     document.getElementById('progressBar').style.width = `${data.progress}%`;
-                    document.getElementById('progressStatus').textContent = 
-                        data.status === 'complete' ? 'Complete!' : 
-                        `Analyzing: ${data.current_domain} (${data.successful + data.failed}/${data.total})`;
+                    if (mode === 'gmb') {
+                        document.getElementById('progressBar').classList.add('gmb');
+                    }
+                    
+                    const completed = data.successful + data.failed;
+                    let statusText = '';
+                    if (data.status === 'complete') {
+                        statusText = '🎉 Complete!';
+                    } else if (mode === 'gmb') {
+                        statusText = `Checking ${data.current_domain || '...'} (${completed}/${data.total} done)`;
+                    } else {
+                        statusText = `Processing (${completed}/${data.total} done)`;
+                    }
+                    document.getElementById('progressStatus').textContent = statusText;
                     
                     // Update logs
                     const container = document.getElementById('logContainer');
@@ -745,44 +891,76 @@
                     // Add new results
                     if (data.results.length > lastResultCount) {
                         for (let i = lastResultCount; i < data.results.length; i++) {
-                            addResultCard(data.results[i]);
+                            addResultCard(data.results[i], mode);
+                            allResults.push(data.results[i]);
                         }
                         lastResultCount = data.results.length;
+                        updateResultActions();
                     }
                     
                     // Update stats
-                    const stats = document.getElementById('resultsStats');
-                    stats.innerHTML = `
-                        <div class="stat">
-                            <div class="stat-value">${data.total}</div>
-                            <div class="stat-label">Total</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value" style="color: var(--success)">${data.successful}</div>
-                            <div class="stat-label">Successful</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-value" style="color: var(--danger)">${data.failed}</div>
-                            <div class="stat-label">Failed</div>
-                        </div>
-                    `;
+                    updateStats(data, mode);
                     
-                    // Check if complete
                     if (data.status === 'complete') {
                         clearInterval(pollInterval);
                         document.getElementById('analyzeBtn').disabled = false;
                         setTimeout(() => {
                             document.getElementById('progressSection').classList.remove('active');
-                        }, 2000);
+                        }, 3000);
                     }
                 })
                 .catch(err => console.error('Poll error:', err));
+        }
+        
+        function updateStats(data, mode) {
+            const stats = document.getElementById('resultsStats');
+            const captchaCount = data.captcha_count || 0;
+            const captchaWarning = captchaCount > 0 ? `
+                <div class="stat" style="border-color: var(--warning);">
+                    <div class="stat-value" style="color: var(--warning)">${captchaCount}</div>
+                    <div class="stat-label">⚠️ Captcha</div>
+                </div>
+            ` : '';
+            
+            if (mode === 'gmb') {
+                stats.innerHTML = `
+                    <div class="stat">
+                        <div class="stat-value">${data.total}</div>
+                        <div class="stat-label">Total</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" style="color: var(--success)">${data.successful}</div>
+                        <div class="stat-label">Has GMB</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" style="color: var(--text-muted)">${data.failed - captchaCount}</div>
+                        <div class="stat-label">No GMB</div>
+                    </div>
+                    ${captchaWarning}
+                `;
+            } else {
+                stats.innerHTML = `
+                    <div class="stat">
+                        <div class="stat-value">${data.total}</div>
+                        <div class="stat-label">Total</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" style="color: var(--success)">${data.successful}</div>
+                        <div class="stat-label">Success</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-value" style="color: var(--danger)">${data.failed}</div>
+                        <div class="stat-label">Failed</div>
+                    </div>
+                `;
+            }
         }
 
         function startAnalysis() {
             const domainsText = document.getElementById('domains').value;
             const domains = domainsText.split('\n').map(d => d.trim()).filter(d => d);
             const interval = parseInt(document.getElementById('interval').value);
+            const workers = parseInt(document.getElementById('workers').value);
 
             if (domains.length === 0) {
                 alert('Please enter at least one domain');
@@ -791,28 +969,36 @@
 
             // Reset UI
             lastResultCount = 0;
+            allResults = [];
             document.getElementById('analyzeBtn').disabled = true;
             document.getElementById('progressSection').classList.add('active');
             document.getElementById('resultsSection').classList.add('active');
             document.getElementById('progressBar').style.width = '0%';
+            document.getElementById('progressBar').classList.remove('gmb');
             document.getElementById('logContainer').innerHTML = '';
             document.getElementById('resultsGrid').innerHTML = '';
             document.getElementById('resultsStats').innerHTML = '';
+            document.getElementById('resultsActions').style.display = 'none';
 
+            const gmbParallel = getGmbParallel();
+            
             // Start analysis
             fetch('/api/analyze', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ domains, interval })
+                body: JSON.stringify({ domains, interval, workers, mode: currentMode, gmb_parallel: gmbParallel })
             })
             .then(res => res.json())
             .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                    document.getElementById('analyzeBtn').disabled = false;
+                    return;
+                }
                 sessionId = data.session_id;
                 document.getElementById('progressStatus').textContent = 
-                    `Starting analysis of ${data.domains_count} domains...`;
-                
-                // Start polling
-                pollInterval = setInterval(pollStatus, 1000);
+                    `Starting ${data.mode.toUpperCase()} analysis of ${data.domains_count} domains...`;
+                pollInterval = setInterval(pollStatus, 500);
             })
             .catch(err => {
                 console.error(err);
@@ -820,17 +1006,119 @@
             });
         }
 
-        function addResultCard(result) {
+        function addResultCard(result, mode) {
             const grid = document.getElementById('resultsGrid');
             const card = document.createElement('div');
-            card.className = `result-card ${result.status}`;
+            const domain = (result.domain || '').replace('https://', '').replace('http://', '');
             
-            const domain = result.domain.replace('https://', '').replace('http://', '');
+            if (mode === 'gmb') {
+                card.className = `result-card ${result.has_gmb ? 'has-gmb' : 'no-gmb'}`;
+                card.innerHTML = renderGMBCard(result, domain);
+            } else {
+                card.className = `result-card ${result.status}`;
+                card.innerHTML = renderWaybackCard(result, domain);
+            }
             
-            if (result.status === 'failed') {
-                card.innerHTML = `
-                    <div class="result-summary" onclick="toggleCard(this)">
+            card.style.animation = 'fadeIn 0.5s ease';
+            grid.appendChild(card);
+        }
+        
+        function renderGMBCard(result, domain) {
+            const hasGmb = result.has_gmb;
+            const hasCaptcha = result.captcha_detected;
+            
+            let statusBadge = '';
+            if (hasCaptcha) {
+                statusBadge = '<span class="gmb-badge" style="background: rgba(247,183,49,0.15); color: var(--warning);">⚠️ Captcha</span>';
+            } else if (hasGmb) {
+                statusBadge = '<span class="gmb-badge has">✅ Has GMB</span>';
+            } else {
+                statusBadge = '<span class="gmb-badge none">❌ No GMB</span>';
+            }
+            
+            return `
+                <div class="result-summary" onclick="toggleCard(this)">
+                    <div class="domain-cell">
+                        <button class="copy-btn" onclick="copyDomain(event, '${domain}')" title="Copy domain">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
                         <span class="domain-name">${domain}</span>
+                    </div>
+                    ${statusBadge}
+                    <span>${result.business_name ? result.business_name.substring(0, 25) + (result.business_name.length > 25 ? '...' : '') : '-'}</span>
+                    <span>${result.rating ? result.rating + ' ⭐' : '-'}</span>
+                    <span>${result.reviews_count ? result.reviews_count + ' reviews' : '-'}</span>
+                    <span class="expand-icon">▼</span>
+                </div>
+                <div class="result-details">
+                    ${hasCaptcha ? '<div class="error-message" style="color: var(--warning);">⚠️ CAPTCHA detected! Google is rate-limiting requests. Reduce parallel workers and try again.</div>' : 
+                      hasGmb ? renderGMBInfo(result) : '<div class="error-message">❌ No Google My Business listing found for this domain.</div>'}
+                </div>
+            `;
+        }
+        
+        function renderGMBInfo(result) {
+            return `
+                ${result.gmb_url ? `
+                    <div class="archive-links">
+                        <a href="${result.gmb_url}" target="_blank" class="archive-btn gmb-link">🗺️ View on Google Maps</a>
+                        ${result.website_url ? `<a href="${result.website_url}" target="_blank" class="archive-btn">🌐 Visit Website</a>` : ''}
+                    </div>
+                ` : ''}
+                <div class="gmb-info">
+                    <h4>Google My Business Details</h4>
+                    <div class="gmb-details">
+                        ${result.business_name ? `
+                            <div class="gmb-detail">
+                                <span class="gmb-detail-label">Business Name</span>
+                                <span class="gmb-detail-value">${result.business_name}</span>
+                            </div>
+                        ` : ''}
+                        ${result.rating ? `
+                            <div class="gmb-detail">
+                                <span class="gmb-detail-label">Rating</span>
+                                <span class="gmb-detail-value">${result.rating} ⭐ ${result.reviews_count ? `(${result.reviews_count} reviews)` : ''}</span>
+                            </div>
+                        ` : ''}
+                        ${result.address ? `
+                            <div class="gmb-detail">
+                                <span class="gmb-detail-label">Address</span>
+                                <span class="gmb-detail-value">${result.address}</span>
+                            </div>
+                        ` : ''}
+                        ${result.phone ? `
+                            <div class="gmb-detail">
+                                <span class="gmb-detail-label">Phone</span>
+                                <span class="gmb-detail-value">${result.phone}</span>
+                            </div>
+                        ` : ''}
+                        ${result.website_url ? `
+                            <div class="gmb-detail">
+                                <span class="gmb-detail-label">Website</span>
+                                <span class="gmb-detail-value"><a href="${result.website_url}" target="_blank">${result.website_url}</a></span>
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+        }
+        
+        function renderWaybackCard(result, domain) {
+            if (result.status === 'failed') {
+                return `
+                    <div class="result-summary" onclick="toggleCard(this)">
+                        <div class="domain-cell">
+                            <button class="copy-btn" onclick="copyDomain(event, '${domain}')" title="Copy domain">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
+                            <span class="domain-name">${domain}</span>
+                        </div>
                         <span class="score-badge score-low">Failed</span>
                         <span></span>
                         <span></span>
@@ -839,42 +1127,59 @@
                     </div>
                     <div class="result-details">
                         <div class="error-message">❌ ${result.error}</div>
-                    </div>
-                `;
-            } else {
-                const scoreClass = result.consistency_score >= 70 ? 'score-high' : 
-                                   result.consistency_score >= 40 ? 'score-medium' : 'score-low';
-                
-                card.innerHTML = `
-                    <div class="result-summary" onclick="toggleCard(this)">
-                        <span class="domain-name">${domain}</span>
-                        <span class="score-badge ${scoreClass}">${result.consistency_score}%</span>
-                        <span class="niche-status ${result.niche_changed ? 'niche-changed' : 'niche-same'}">
-                            ${result.niche_changed ? '⚠️ Niche Changed' : '✓ Same Niche'}
-                        </span>
-                        <span class="date-range">${result.first_snapshot || 'N/A'}</span>
-                        <span class="date-range">${result.last_snapshot || 'N/A'}</span>
-                        <span class="expand-icon">▼</span>
-                    </div>
-                    <div class="result-details">
-                        ${renderStory(result)}
-                        ${renderTimeline(result)}
-                        ${renderKeywords(result)}
+                        <div class="archive-links">
+                            <a href="${result.wayback_url || '#'}" target="_blank" class="archive-btn">🔍 Search Wayback Machine</a>
+                        </div>
                     </div>
                 `;
             }
             
-            grid.appendChild(card);
+            const scoreClass = result.consistency_score >= 70 ? 'score-high' : 
+                               result.consistency_score >= 40 ? 'score-medium' : 'score-low';
+            
+            return `
+                <div class="result-summary" onclick="toggleCard(this)">
+                    <div class="domain-cell">
+                        <button class="copy-btn" onclick="copyDomain(event, '${domain}')" title="Copy domain">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                        </button>
+                        <span class="domain-name">${domain}</span>
+                    </div>
+                    <span class="score-badge ${scoreClass}">${result.consistency_score}%</span>
+                    <span class="niche-status ${result.niche_changed ? 'niche-changed' : 'niche-same'}">
+                        ${result.niche_changed ? '⚠️ Niche Changed' : '✓ Same Niche'}
+                    </span>
+                    <span class="date-range">${result.first_snapshot || 'N/A'}</span>
+                    <span class="date-range">${result.last_snapshot || 'N/A'}</span>
+                    <span class="expand-icon">▼</span>
+                </div>
+                <div class="result-details">
+                    ${renderArchiveLinks(result)}
+                    ${renderStory(result)}
+                    ${renderTimeline(result)}
+                    ${renderKeywords(result)}
+                </div>
+            `;
+        }
+        
+        function renderArchiveLinks(result) {
+            return `
+                <div class="archive-links">
+                    <a href="${result.latest_snapshot_url || '#'}" target="_blank" class="archive-btn primary">📸 View Latest Snapshot</a>
+                    <a href="${result.wayback_url || '#'}" target="_blank" class="archive-btn">🗓️ Browse All Snapshots</a>
+                </div>
+            `;
         }
 
         function renderStory(result) {
             if (!result.story) return '';
-            
             const storyHtml = result.story
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                 .replace(/\*(.*?)\*/g, '<em>$1</em>')
                 .replace(/\n\n/g, '</p><p>');
-            
             return `
                 <div class="story-section">
                     <h4>The Story</h4>
@@ -885,7 +1190,6 @@
 
         function renderTimeline(result) {
             if (!result.change_timeline || result.change_timeline.length === 0) return '';
-            
             const items = result.change_timeline.map(change => {
                 const changeClass = change.change_percent > 50 ? 'high-change' : 
                                    change.change_percent > 20 ? 'medium-change' : '';
@@ -893,7 +1197,6 @@
                                   change.change_percent > 20 ? 'moderate' : 'stable';
                 const changeColor = change.change_percent > 50 ? 'var(--danger)' : 
                                    change.change_percent > 20 ? 'var(--warning)' : 'var(--success)';
-                
                 return `
                     <div class="timeline-item ${changeClass}">
                         <div class="timeline-date">${change.from} → ${change.to}</div>
@@ -901,12 +1204,11 @@
                             <div class="change-bar">
                                 <div class="change-fill ${fillClass}" style="width: ${100 - change.change_percent}%"></div>
                             </div>
-                            <span class="change-percent" style="color: ${changeColor}">${change.change_percent}% changed</span>
+                            <span class="change-percent" style="color: ${changeColor}">${change.change_percent}%</span>
                         </div>
                     </div>
                 `;
             }).join('');
-            
             return `
                 <div class="timeline-section">
                     <h4>Change Timeline</h4>
@@ -917,15 +1219,12 @@
 
         function renderKeywords(result) {
             if (!result.top_keywords_first && !result.top_keywords_last) return '';
-            
             const firstKeywords = result.top_keywords_first ? 
                 result.top_keywords_first.split(', ').map(k => `<span class="keyword-tag">${k}</span>`).join('') : 
                 '<span class="keyword-tag">N/A</span>';
-            
             const lastKeywords = result.top_keywords_last ? 
                 result.top_keywords_last.split(', ').map(k => `<span class="keyword-tag">${k}</span>`).join('') : 
                 '<span class="keyword-tag">N/A</span>';
-            
             return `
                 <div class="keywords-section">
                     <div class="keyword-box">
@@ -943,7 +1242,139 @@
         function toggleCard(element) {
             element.parentElement.classList.toggle('expanded');
         }
+
+        function copyDomain(event, domain) {
+            event.stopPropagation();
+            navigator.clipboard.writeText(domain).then(() => {
+                const btn = event.currentTarget;
+                btn.classList.add('copied');
+                const originalSvg = btn.innerHTML;
+                btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+                setTimeout(() => {
+                    btn.classList.remove('copied');
+                    btn.innerHTML = originalSvg;
+                }, 1500);
+            });
+        }
+
+        function exportCSV() {
+            if (allResults.length === 0) {
+                alert('No results to export');
+                return;
+            }
+
+            let csv = '';
+            
+            if (currentMode === 'gmb') {
+                csv = 'domain,has_gmb,business_name,rating,reviews,address,phone,website_url,gmb_url,captcha,error\n';
+                allResults.forEach(r => {
+                    const row = [
+                        r.domain || '',
+                        r.has_gmb ? 'Yes' : 'No',
+                        (r.business_name || '').replace(/"/g, '""'),
+                        r.rating || '',
+                        r.reviews_count || '',
+                        (r.address || '').replace(/"/g, '""'),
+                        r.phone || '',
+                        r.website_url || '',
+                        r.gmb_url || '',
+                        r.captcha_detected ? 'Yes' : 'No',
+                        (r.error || '').replace(/"/g, '""')
+                    ].map(v => `"${v}"`).join(',');
+                    csv += row + '\n';
+                });
+            } else {
+                csv = 'domain,status,consistency_score,stability_rating,first_snapshot,last_snapshot,niche_changed,avg_change,max_change\n';
+                allResults.forEach(r => {
+                    const row = [
+                        r.domain || '',
+                        r.status || '',
+                        r.consistency_score || '',
+                        r.stability_rating || '',
+                        r.first_snapshot || '',
+                        r.last_snapshot || '',
+                        r.niche_changed ? 'Yes' : 'No',
+                        r.avg_change_percent || '',
+                        r.max_change_percent || ''
+                    ].map(v => `"${v}"`).join(',');
+                    csv += row + '\n';
+                });
+            }
+
+            const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const timestamp = new Date().toISOString().slice(0, 10);
+            link.href = URL.createObjectURL(blob);
+            link.download = `${currentMode}_results_${timestamp}.csv`;
+            link.click();
+            URL.revokeObjectURL(link.href);
+        }
+
+        function copyGMBDomains() {
+            const gmbDomains = allResults
+                .filter(r => r.has_gmb)
+                .map(r => (r.domain || '').replace('https://', '').replace('http://', ''));
+            
+            if (gmbDomains.length === 0) {
+                alert('No domains with GMB found');
+                return;
+            }
+
+            navigator.clipboard.writeText(gmbDomains.join('\n')).then(() => {
+                const btn = document.getElementById('copyGmbBtn');
+                const original = btn.innerHTML;
+                btn.innerHTML = '✅ Copied!';
+                btn.classList.add('success');
+                setTimeout(() => {
+                    btn.innerHTML = original;
+                    btn.classList.remove('success');
+                }, 2000);
+            });
+        }
+
+        function copyAllDomains() {
+            const domains = allResults
+                .map(r => (r.domain || '').replace('https://', '').replace('http://', ''));
+            
+            if (domains.length === 0) {
+                alert('No domains to copy');
+                return;
+            }
+
+            navigator.clipboard.writeText(domains.join('\n')).then(() => {
+                const btn = event.target;
+                const original = btn.innerHTML;
+                btn.innerHTML = '✅ Copied!';
+                btn.classList.add('success');
+                setTimeout(() => {
+                    btn.innerHTML = original;
+                    btn.classList.remove('success');
+                }, 2000);
+            });
+        }
+
+        function updateResultActions() {
+            const actionsDiv = document.getElementById('resultsActions');
+            const copyGmbBtn = document.getElementById('copyGmbBtn');
+            
+            if (allResults.length > 0) {
+                actionsDiv.style.display = 'flex';
+                
+                if (currentMode === 'gmb') {
+                    const gmbCount = allResults.filter(r => r.has_gmb).length;
+                    if (gmbCount > 0) {
+                        copyGmbBtn.style.display = 'inline-flex';
+                        copyGmbBtn.innerHTML = `📋 Copy ${gmbCount} GMB Domain${gmbCount !== 1 ? 's' : ''}`;
+                    } else {
+                        copyGmbBtn.style.display = 'none';
+                    }
+                } else {
+                    copyGmbBtn.style.display = 'none';
+                }
+            } else {
+                actionsDiv.style.display = 'none';
+            }
+        }
     </script>
 </body>
 </html>
-
